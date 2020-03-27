@@ -1,11 +1,12 @@
 const fs = require('fs');
 const colors = require('colors');
-module.exports = function readableStream(input) {
-  if (fs.existsSync(input)) {
-    return fs.createReadStream(input);
-  } else if (!input) {
-    process.stdout.write('Введите текст: ');
-    return process.stdin;
+module.exports = function writeableStream(output) {
+  if (fs.existsSync(output)) {
+    return fs.createWriteStream(output, {
+      flags: 'a'
+    });
+  } else if (!output) {
+    return process.stdout;
   }
 
   process.stderr.write(
