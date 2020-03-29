@@ -13,5 +13,6 @@ module.exports = function readableStream(input) {
       'Введенный вами файл не существует, проверьте корректность данных'
     )
   );
-  process.exit(1);
+  const exit = process.exit;
+  exit(1);
 };

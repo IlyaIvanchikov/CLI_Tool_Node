@@ -1,4 +1,3 @@
-/* eslint-disable node/shebang */
 const program = require('commander');
 const validate = require('./validate');
 const colors = require('colors');

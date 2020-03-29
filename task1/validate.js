@@ -1,11 +1,10 @@
-const program = require('commander');
 const colors = require('colors');
-const { encode, decode } = require('./cipher');
 
 module.exports = ({ shift, action }) => {
   if (shift === undefined) {
     process.stderr.write(colors.red('Данные о смещении не переданы'));
-    process.exit(1);
+    const exit = process.exit;
+    exit(1);
   } else if (
     action === undefined ||
     (action !== 'decode' && action !== 'encode')
@@ -13,6 +12,7 @@ module.exports = ({ shift, action }) => {
     process.stderr.write(
       colors.red('Данные о кодировании/декодировании не получены корректно')
     );
-    process.exit(2);
+    const exit = process.exit;
+    exit(2);
   }
 };
