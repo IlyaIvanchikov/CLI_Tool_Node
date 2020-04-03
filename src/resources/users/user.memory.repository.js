@@ -71,20 +71,23 @@ const updateUser = async (id, user) => {
 const deleteUser = async id => {
   const users = await getAll();
   const userId = users.findIndex(item => item.id === id);
-  console.log(userId);
-  // users.splice(userId, 1);
-  return new Promise((resolve, reject) => {
-    fs.writeFile(
-      path.join(__dirname, '..', '..', 'data', 'users.json'),
-      JSON.stringify(users),
-      err => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(users);
+  const test = false;
+  if (userId !== -1) {
+    users.splice(userId, 1);
+    return new Promise((resolve, reject) => {
+      fs.writeFile(
+        path.join(__dirname, '..', '..', 'data', 'users.json'),
+        JSON.stringify(users),
+        err => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(users);
+          }
         }
-      }
-    );
-  });
+      );
+    });
+  }
+  return test;
 };
 module.exports = { getAll, saveUser, getUser, updateUser, deleteUser };

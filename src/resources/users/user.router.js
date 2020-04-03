@@ -41,6 +41,9 @@ router.route('/:id').put(async (req, res) => {
 
 router.route('/:id').delete(async (req, res) => {
   const users = await usersService.deleteUser(req.params.id);
-  console.log(users);
+  if (users !== false) {
+    return res.status(204).json(users.map(User.toResponse));
+  }
+  return res.status(404).send('Bad request');
 });
 module.exports = router;
