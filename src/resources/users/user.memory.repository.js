@@ -29,7 +29,6 @@ const toJSON = user => {
 const saveUser = async user => {
   const users = await getAll();
   await users.push(toJSON(user));
-  console.log(users);
   return new Promise((resolve, reject) => {
     fs.writeFile(
       path.join(__dirname, '..', '..', 'data', 'users.json'),
@@ -69,4 +68,23 @@ const updateUser = async (id, user) => {
   });
 };
 
-module.exports = { getAll, saveUser, getUser, updateUser };
+const deleteUser = async id => {
+  const users = await getAll();
+  const userId = users.findIndex(item => item.id === id);
+  console.log(userId);
+  // users.splice(userId, 1);
+  return new Promise((resolve, reject) => {
+    fs.writeFile(
+      path.join(__dirname, '..', '..', 'data', 'users.json'),
+      JSON.stringify(users),
+      err => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(users);
+        }
+      }
+    );
+  });
+};
+module.exports = { getAll, saveUser, getUser, updateUser, deleteUser };
