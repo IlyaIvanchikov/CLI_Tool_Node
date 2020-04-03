@@ -88,6 +88,6 @@ const deleteUser = async id => {
       );
     });
   }
-  return test;
+  return users;
 };
 module.exports = { getAll, saveUser, getUser, updateUser, deleteUser };
