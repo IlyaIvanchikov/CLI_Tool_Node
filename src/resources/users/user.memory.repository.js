@@ -52,6 +52,7 @@ const getUser = async id => {
 const updateUser = async (id, user) => {
   const users = await getAll();
   const userId = users.findIndex(item => item.id === id);
+  console.log(users[userId]);
   users[userId] = user;
   return new Promise((resolve, reject) => {
     fs.writeFile(
@@ -61,7 +62,7 @@ const updateUser = async (id, user) => {
         if (err) {
           reject(err);
         } else {
-          resolve(users);
+          resolve(user);
         }
       }
     );
@@ -71,7 +72,6 @@ const updateUser = async (id, user) => {
 const deleteUser = async id => {
   const users = await getAll();
   const userId = users.findIndex(item => item.id === id);
-  const test = false;
   if (userId !== -1) {
     users.splice(userId, 1);
     return new Promise((resolve, reject) => {

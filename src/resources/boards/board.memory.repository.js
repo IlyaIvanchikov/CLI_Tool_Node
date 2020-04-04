@@ -44,10 +44,10 @@ const getAll = async () => {
 //   });
 // };
 
-// const getUser = async id => {
-//   const users = await getAll();
-//   return users.find(item => item.id === id);
-// };
+const getBoard = async id => {
+  const boards = await getAll();
+  return boards.find(item => item.id === id);
+};
 
 // const updateUser = async (id, user) => {
 //   const users = await getAll();
@@ -90,4 +90,4 @@ const getAll = async () => {
 //   }
 //   return users;
 // };
-module.exports = { getAll };
+module.exports = { getAll, getBoard };

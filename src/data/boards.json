@@ -9,5 +9,16 @@
         "order": 0
       }
     ]
+  },
+  {
+    "id": "2",
+    "title": "Header",
+    "columns": [
+      {
+        "id": "1",
+        "title": "bye",
+        "order": 0
+      }
+    ]
   }
 ]

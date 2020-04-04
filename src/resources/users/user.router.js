@@ -32,9 +32,10 @@ router.route('/:id').put(async (req, res) => {
   const user = new User(req.body);
   const id = req.params.id;
   if (user !== undefined && id !== undefined) {
-    await usersService.updateUser(id, user);
-    const users = await usersService.getUser(id);
-    return res.status(200).json(User.toResponse(users));
+    const userOne = await usersService.updateUser(id, user);
+    return res.status(200).json(User.toResponse(userOne));
+  } else if (user === undefined || id === undefined) {
+    return res.status(401).send('Access token is missing or invalid');
   }
   return res.status(400).send('Bad request');
 });
@@ -43,8 +44,16 @@ router.route('/:id').delete(async (req, res) => {
   const usersAll = await usersService.getAll();
   const users = await usersService.deleteUser(req.params.id);
   if (users === usersAll) {
-    return res.status(404).send('Bad request');
+    return res
+      .status(404)
+      .send('User not found')
+      .end();
+  } else if (users !== usersAll) {
+    return res.json(User.toResponse());
   }
-  return res.status(200).json(User.toResponse(users));
+  return res
+    .status(400)
+    .send('Bad request')
+    .end();
 });
 module.exports = router;

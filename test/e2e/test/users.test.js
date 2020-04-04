@@ -10,7 +10,13 @@ const TEST_USER_DATA = {
   login: 'test_user',
   password: 'T35t_P@55w0rd'
 };
-
+const TEST_BOARD_DATA = {
+  title: 'Autotest board',
+  columns: [
+    { title: 'Backlog', order: 1 },
+    { title: 'Sprint', order: 2 }
+  ]
+};
 describe('Users suite', () => {
   let request = unauthorizedRequest;
 
@@ -140,6 +146,7 @@ describe('Users suite', () => {
 
       const boardResponse = await request
         .post(routes.boards.create)
+        .send(TEST_BOARD_DATA)
         .set('Accept', 'application/json')
         .expect(200)
         .expect('Content-Type', /json/);
