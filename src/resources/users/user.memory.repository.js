@@ -52,21 +52,23 @@ const getUser = async id => {
 const updateUser = async (id, user) => {
   const users = await getAll();
   const userId = users.findIndex(item => item.id === id);
-  console.log(users[userId]);
-  users[userId] = user;
-  return new Promise((resolve, reject) => {
-    fs.writeFile(
-      path.join(__dirname, '..', '..', 'data', 'users.json'),
-      JSON.stringify(users),
-      err => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(user);
+  if (userId !== -1) {
+    users[userId] = user;
+    return new Promise((resolve, reject) => {
+      fs.writeFile(
+        path.join(__dirname, '..', '..', 'data', 'users.json'),
+        JSON.stringify(users),
+        err => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(user);
+          }
         }
-      }
-    );
-  });
+      );
+    });
+  }
+  return;
 };
 
 const deleteUser = async id => {

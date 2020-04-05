@@ -1,11 +1,13 @@
-// const uuid = require('uuid');
+const uuid = require('uuid');
+const Column = require('../columns/column.model');
+class Board {
+  constructor({ id = uuid(), title = 'Board', columns = [] } = {}) {
+    this.id = id;
+    this.title = title;
+    this.columns = columns.map((item, index) => {
+      return new Column(item);
+    })
+  }
+}
 
-// class Border {
-//   constructor({ id = uuid(), title = 'Board', columns = [] } = {}) {
-//     this.id = id;
-//     this.title = title;
-//     this.columns = [(this.id = id), (this.title = title), (this.order = order)];
-//   }
-// }
-
-// module.exports = Border;
+module.exports = Board;

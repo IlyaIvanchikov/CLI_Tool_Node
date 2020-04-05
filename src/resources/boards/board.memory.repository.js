@@ -17,32 +17,33 @@ const getAll = async () => {
   });
 };
 
-// const toJSON = user => {
-//   return {
-//     id: user.id,
-//     login: user.login,
-//     name: user.name,
-//     password: user.password
-//   };
-// };
+const toJSON = board => {
+  return {
+    id: board.id,
+    title: board.title,
+    columns: board.columns,
+  };
+};
 
-// const saveUser = async user => {
-//   const users = await getAll();
-//   await users.push(toJSON(user));
-//   return new Promise((resolve, reject) => {
-//     fs.writeFile(
-//       path.join(__dirname, '..', '..', 'data', 'users.json'),
-//       JSON.stringify(users),
-//       err => {
-//         if (err) {
-//           reject(err);
-//         } else {
-//           resolve(users);
-//         }
-//       }
-//     );
-//   });
-// };
+const saveBoard = async board => {
+  const boards = await getAll();
+  // console.log(board);
+  await boards.push(toJSON(board));
+  // console.log(boards);
+  return new Promise((resolve, reject) => {
+    fs.writeFile(
+      path.join(__dirname, '..', '..', 'data', 'boards.json'),
+      JSON.stringify(boards),
+      err => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(boards);
+        }
+      }
+    );
+  });
+};
 
 const getBoard = async id => {
   const boards = await getAll();
@@ -90,4 +91,4 @@ const getBoard = async id => {
 //   }
 //   return users;
 // };
-module.exports = { getAll, getBoard };
+module.exports = { getAll, getBoard, saveBoard };

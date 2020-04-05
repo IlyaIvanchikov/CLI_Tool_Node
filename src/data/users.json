@@ -1,1 +1,62 @@
-[{"id":"bd5efc34-001f-49b5-a33c-cf9c162c0ef5","name":"12","login":"12","password":"12"}]
+[
+  {
+    "id": "e3df1a52-2af9-4dc5-b691-ade74875628c",
+    "login": "test_user",
+    "name": "TEST_USER",
+    "password": "T35t_P@55w0rd"
+  },
+  {
+    "id": "08ce0943-90cb-4da7-ae0e-f991415bbd8c",
+    "login": "test_user",
+    "name": "TEST_USER",
+    "password": "T35t_P@55w0rd"
+  },
+  {
+    "id": "dc4a99ff-c4c4-45fe-86dc-974adc627a3d",
+    "login": "test_user",
+    "name": "TEST_USER",
+    "password": "T35t_P@55w0rd"
+  },
+  {
+    "id": "14bc0570-cb78-4b83-974b-d5462eb003f8",
+    "login": "test_user",
+    "name": "TEST_USER",
+    "password": "T35t_P@55w0rd"
+  },
+  {
+    "id": "39259c28-ad1a-4ffe-951c-1e02ce663b4e",
+    "login": "test_user",
+    "name": "TEST_USER",
+    "password": "T35t_P@55w0rd"
+  },
+  {
+    "id": "2c823d72-b1ce-4eac-9a4b-f75d21bbaac9",
+    "login": "test_user",
+    "name": "TEST_USER",
+    "password": "T35t_P@55w0rd"
+  },
+  {
+    "id": "0161fc26-e059-42b7-b1ce-fd4058fda1d9",
+    "login": "test_user",
+    "name": "TEST_USER",
+    "password": "T35t_P@55w0rd"
+  },
+  {
+    "id": "32fbbada-b0bb-420f-b7cd-c1871efe9cf0",
+    "login": "test_user",
+    "name": "TEST_USER",
+    "password": "T35t_P@55w0rd"
+  },
+  {
+    "id": "04ea5d88-9744-4e9c-bf68-aaa7a0ea29f9",
+    "login": "test_user",
+    "name": "TEST_USER",
+    "password": "T35t_P@55w0rd"
+  },
+  {
+    "id": "cb9f5dad-b94e-41a6-afe6-b0972e33259c",
+    "login": "test_user",
+    "name": "TEST_USER",
+    "password": "T35t_P@55w0rd"
+  }
+]
