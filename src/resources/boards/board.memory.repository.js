@@ -27,9 +27,7 @@ const toJSON = board => {
 
 const saveBoard = async board => {
   const boards = await getAll();
-  // console.log(board);
   await boards.push(toJSON(board));
-  // console.log(boards);
   return new Promise((resolve, reject) => {
     fs.writeFile(
       path.join(__dirname, '..', '..', 'data', 'boards.json'),
@@ -50,45 +48,47 @@ const getBoard = async id => {
   return boards.find(item => item.id === id);
 };
 
-// const updateUser = async (id, user) => {
-//   const users = await getAll();
-//   const userId = users.findIndex(item => item.id === id);
-//   users[userId] = user;
-//   return new Promise((resolve, reject) => {
-//     fs.writeFile(
-//       path.join(__dirname, '..', '..', 'data', 'users.json'),
-//       JSON.stringify(users),
-//       err => {
-//         if (err) {
-//           reject(err);
-//         } else {
-//           resolve(users);
-//         }
-//       }
-//     );
-//   });
-// };
+const updateBoard = async (id, board) => {
+  const boards = await getAll();
+  const boardId = boards.findIndex(item => item.id === id);
+  if (boardId !== -1) {
+    boards[boardId] = board;
+    return new Promise((resolve, reject) => {
+      fs.writeFile(
+        path.join(__dirname, '..', '..', 'data', 'boards.json'),
+        JSON.stringify(boards),
+        err => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(board);
+          }
+        }
+      );
+    });
+  }
+  return;
+};
 
-// const deleteUser = async id => {
-//   const users = await getAll();
-//   const userId = users.findIndex(item => item.id === id);
-//   const test = false;
-//   if (userId !== -1) {
-//     users.splice(userId, 1);
-//     return new Promise((resolve, reject) => {
-//       fs.writeFile(
-//         path.join(__dirname, '..', '..', 'data', 'users.json'),
-//         JSON.stringify(users),
-//         err => {
-//           if (err) {
-//             reject(err);
-//           } else {
-//             resolve(users);
-//           }
-//         }
-//       );
-//     });
-//   }
-//   return users;
-// };
-module.exports = { getAll, getBoard, saveBoard };
+const deleteBoard = async id => {
+  const boards = await getAll();
+  const boardId = boards.findIndex(item => item.id === id);
+  if (boardId !== -1) {
+    boards.splice(boardId, 1);
+    return new Promise((resolve, reject) => {
+      fs.writeFile(
+        path.join(__dirname, '..', '..', 'data', 'boards.json'),
+        JSON.stringify(boards),
+        err => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(boards);
+          }
+        }
+      );
+    });
+  }
+  return boards;
+};
+module.exports = { getAll, getBoard, saveBoard, updateBoard, deleteBoard };

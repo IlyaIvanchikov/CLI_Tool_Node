@@ -42,9 +42,7 @@ router.route('/:id').put(async (req, res) => {
 
 router.route('/:id').delete(async (req, res) => {
   const usersAll = await usersService.getAll();
-  console.log(usersAll.length)
   const users = await usersService.deleteUser(req.params.id);
-  console.log(users.length)
   if (users.length === usersAll.length) {
     return res
       .status(404)
