@@ -7,15 +7,7 @@ router.route('/').get(async (req, res) => {
   if (users.length !== 0) {
     return res.status(200).json(users.map(User.toResponse));
   }
-  return res.status(401).send('Access token is missing or invalid');
-});
-
-router.route('/:id').get(async (req, res) => {
-  const users = await usersService.getUser(req.params.id);
-  if (users !== undefined) {
-    return res.status(200).json(User.toResponse(users));
-  }
-  return res.status(401).send('Access token is missing or invalid');
+  return res.status(200).send('Access token is missing or invalid');
 });
 
 router.route('/').post(async (req, res) => {
@@ -25,7 +17,15 @@ router.route('/').post(async (req, res) => {
     const users = await usersService.getUser(user.id);
     return res.status(200).json(User.toResponse(users));
   }
-  return res.status(400).send('Bad request');
+  return res.status(404).send('Bad request');
+});
+
+router.route('/:id').get(async (req, res) => {
+  const users = await usersService.getUser(req.params.id);
+  if (users !== undefined) {
+    return res.status(200).json(User.toResponse(users));
+  }
+  return res.status(400).send('Access token is missing or invalid');
 });
 
 router.route('/:id').put(async (req, res) => {
@@ -36,7 +36,7 @@ router.route('/:id').put(async (req, res) => {
     return res.status(200).json(User.toResponse(userOne));
   }
   else {
-    return res.status(400).send('Bad request');
+    return res.status(404).send('Bad request');
   }
 });
 
@@ -47,7 +47,6 @@ router.route('/:id').delete(async (req, res) => {
     return res
       .status(404)
       .send('User not found')
-      .end();
   } else {
     return res.status(200).json(users.map(User.toResponse));
   }

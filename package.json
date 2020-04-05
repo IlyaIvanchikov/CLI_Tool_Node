@@ -5,6 +5,10 @@
     "type": "git",
     "url": ""
   },
+  "nodemonConfig": {
+    "ignore": ["src/test/*", "src/data/*"],
+    "delay": "2500"
+  },
   "type": "commonjs",
   "description": "REST service starter for RS School",
   "main": "src/server.js",

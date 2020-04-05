@@ -8,6 +8,7 @@ class Board {
       return new Column(item);
     })
   }
+
 }
 
 module.exports = Board;

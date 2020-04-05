@@ -22,6 +22,7 @@ app.use('/', (req, res, next) => {
 
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
+// app.use('/boards/:id/tasks', taskRouter);
 // app.use((req, res, next) => {
 //   res.status(404).send('Sorry cant find that!');
 // });
