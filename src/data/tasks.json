@@ -1,0 +1,11 @@
+[
+  {
+    "id": "1",
+    "title": "Autotest task",
+    "order": 0,
+    "description": "Lorem ipsum",
+    "userId": null,
+    "boardId": "1",
+    "columnId": null
+  }
+]

@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-
+const getByBoardTask = require('../tasks/task.memory.repository');
 const getAll = async () => {
   return new Promise((resolve, reject) => {
     fs.readFile(
@@ -21,7 +21,7 @@ const toJSON = board => {
   return {
     id: board.id,
     title: board.title,
-    columns: board.columns,
+    columns: board.columns
   };
 };
 
@@ -74,6 +74,7 @@ const deleteBoard = async id => {
   const boards = await getAll();
   const boardId = boards.findIndex(item => item.id === id);
   if (boardId !== -1) {
+    console.log(getByBoardTask.getAll(boards[boardId]));
     boards.splice(boardId, 1);
     return new Promise((resolve, reject) => {
       fs.writeFile(
