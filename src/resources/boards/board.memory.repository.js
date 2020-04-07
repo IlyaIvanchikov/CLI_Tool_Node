@@ -74,7 +74,6 @@ const deleteBoard = async id => {
   const boards = await getAll();
   const boardId = boards.findIndex(item => item.id === id);
   if (boardId !== -1) {
-    console.log(getByBoardTask.getAll(boards[boardId]));
     boards.splice(boardId, 1);
     return new Promise((resolve, reject) => {
       fs.writeFile(
