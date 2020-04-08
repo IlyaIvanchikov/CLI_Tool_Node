@@ -14,3 +14,5 @@
 cd task1 
 Далее следующий образец команды: 
 node task1 --action encode --shift 7 --input input.txt --output output.txt
+
+Вторая задача описана в PR

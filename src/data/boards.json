@@ -1,1 +1,34 @@
-[{"id":"3","title":"Autotest board","columns":[{"id":"f1a9faee-00a3-440d-b477-fc5d4bbaa3bd","title":"Backlog","order":1},{"id":"9a4f5a7d-7203-4ae6-a862-fde6e27f8d0d","title":"Sprint","order":2}]},{"id":"2","title":"Autotest board","columns":[{"id":"77f8fadf-a5cf-411a-ae55-573efd5ba305","title":"Backlog","order":1},{"id":"d113b4ab-492f-444a-9e2b-db69d123eaa6","title":"Sprint","order":2}]}]
+[
+  {
+    "id": "2d3a066c-377a-4e35-b160-12aaa6a2168b",
+    "title": "Autotest board",
+    "columns": [
+      {
+        "id": "8807009e-d459-40dc-b18b-56a92b354141",
+        "title": "Backlog",
+        "order": 1
+      },
+      {
+        "id": "c1615bb1-16ff-4cea-a143-c14eea716a5b",
+        "title": "Sprint",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "8f697be6-6e25-4495-a3aa-de1b2203b01f",
+    "title": "Autotest board",
+    "columns": [
+      {
+        "id": "a5163cee-06da-43e9-877c-077133cc4e09",
+        "title": "Backlog",
+        "order": 1
+      },
+      {
+        "id": "3ac2abc0-ede0-4ea8-913e-2f84484d5b5c",
+        "title": "Sprint",
+        "order": 2
+      }
+    ]
+  }
+]
