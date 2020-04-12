@@ -6,7 +6,10 @@
     "url": ""
   },
   "nodemonConfig": {
-    "ignore": ["src/test/*", "src/data/*"],
+    "ignore": [
+      "src/test/*",
+      "src/data/*"
+    ],
     "delay": "2500"
   },
   "type": "commonjs",
@@ -44,14 +47,17 @@
     ]
   },
   "dependencies": {
+    "app-root-path": "^3.0.0",
     "colors": "^1.4.0",
     "commander": "^5.0.0",
     "cross-env": "6.0.3",
     "dotenv": "8.2.0",
     "express": "4.17.1",
     "inquirer": "^7.1.0",
+    "morgan": "^1.10.0",
     "swagger-ui-express": "4.1.2",
     "uuid": "3.3.3",
+    "winston": "^3.2.1",
     "yamljs": "0.3.0"
   },
   "devDependencies": {

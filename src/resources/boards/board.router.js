@@ -14,16 +14,15 @@ router.route('/').post(async (req, res) => {
   const board = await new Board(req.body);
   if (board !== undefined) {
     await BoardsService.saveBoard(board);
-    const boards = await BoardsService.getBoard(board.id);
-    return res.status(200).json(boards);
+    return res.status(200).json(board);
   }
   return res.status(400).send('Bad request');
 });
 
 router.route('/:id').get(async (req, res) => {
-  const boards = await BoardsService.getBoard(req.params.id);
-  if (boards !== undefined) {
-    return res.status(200).json(boards);
+  const board = await BoardsService.getBoard(req.params.id);
+  if (board !== undefined) {
+    return res.status(200).json(board);
   }
   return res.status(404).send('Access token is missing or invalid');
 });
