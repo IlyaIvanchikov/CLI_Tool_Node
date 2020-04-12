@@ -1,95 +1,33 @@
 const path = require('path');
 const fs = require('fs');
+let users = require('../../data/users').users;
+const taskService = require('../tasks/task.service');
 
 const getAll = async () => {
-  return new Promise((resolve, reject) => {
-    fs.readFile(
-      path.join(__dirname, '..', '..', 'data', 'users.json'),
-      'utf-8',
-      (err, content) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(JSON.parse(content));
-        }
-      }
-    );
-  });
-};
-
-const toJSON = user => {
-  return {
-    id: user.id,
-    login: user.login,
-    name: user.name,
-    password: user.password
-  };
+  return users;
 };
 
 const saveUser = async user => {
-  const users = await getAll();
-  await users.push(toJSON(user));
-  return new Promise((resolve, reject) => {
-    fs.writeFile(
-      path.join(__dirname, '..', '..', 'data', 'users.json'),
-      JSON.stringify(users),
-      err => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(users);
-        }
-      }
-    );
-  });
+  await users.push(user);
+  return user;
 };
 
 const getUser = async id => {
-  const users = await getAll();
   return users.find(item => item.id === id);
 };
 
 const updateUser = async (id, user) => {
-  const users = await getAll();
   const userId = users.findIndex(item => item.id === id);
   if (userId !== -1) {
     users[userId] = user;
-    return new Promise((resolve, reject) => {
-      fs.writeFile(
-        path.join(__dirname, '..', '..', 'data', 'users.json'),
-        JSON.stringify(users),
-        err => {
-          if (err) {
-            reject(err);
-          } else {
-            resolve(user);
-          }
-        }
-      );
-    });
+    return users[userId];
   }
-  return;
+  return; 
 };
 
 const deleteUser = async id => {
-  const users = await getAll();
-  const userId = users.findIndex(item => item.id === id);
-  if (userId !== -1) {
-    users.splice(userId, 1);
-    return new Promise((resolve, reject) => {
-      fs.writeFile(
-        path.join(__dirname, '..', '..', 'data', 'users.json'),
-        JSON.stringify(users),
-        err => {
-          if (err) {
-            reject(err);
-          } else {
-            resolve(users);
-          }
-        }
-      );
-    });
-  }
-  return users;
+  users = users.filter(user => user.id !== id);
+  taskService.userNull(id);
+  return null;
 };
 module.exports = { getAll, saveUser, getUser, updateUser, deleteUser };
