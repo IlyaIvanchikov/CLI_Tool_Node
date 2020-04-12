@@ -44,10 +44,8 @@ router.route('/:boardId/tasks/:id').put(async (req, res) => {
 
 router.route('/:boardId/tasks/:id').delete(async (req, res) => {
   const id = req.params.id;
-  const tasks = await tasksService.deleteTask(id);
-  if (tasks.length === tasksAll.length) {
-    return responseForClient(404, res);
-  }
+  const boardId = req.params.boardId;
+  await tasksService.deleteTask(id);
   return res.status(204).json({ message: 'The user has been deleted' });
 });
 
