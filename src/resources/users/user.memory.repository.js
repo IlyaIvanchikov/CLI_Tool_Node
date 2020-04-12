@@ -27,8 +27,7 @@ const updateUser = async (id, user) => {
 
 const deleteUser = async id => {
   users = users.filter(user => user.id !== id);
-  const test = await taskService.userNull(id);
-  console.log(test);
+  taskService.userNull(id);
   return null;
 };
 module.exports = { getAll, saveUser, getUser, updateUser, deleteUser };

@@ -1,13 +1,14 @@
 const router = require('express').Router();
 const User = require('./user.model');
 const usersService = require('./user.service');
+const responseForClient = require('../../common/allError');
 
-router.route('/').get(async (req, res) => {
+router.route('/').get(async (req, res, next) => {
   const users = await usersService.getAll();
   if (users.length !== 0) {
     return res.status(200).json(users.map(User.toResponse));
   }
-  return res.status(401).send('Access token is missing or invalid');
+  return responseForClient(401, res);
 });
 
 router.route('/').post(async (req, res) => {
@@ -16,13 +17,13 @@ router.route('/').post(async (req, res) => {
     await usersService.saveUser(user);
     return res.status(200).json(User.toResponse(user));
   }
-  return res.status(404).send('Bad request');
+  return responseForClient(404, res);
 });
 
 router.route('/:id').get(async (req, res) => {
   const users = await usersService.getUser(req.params.id);
   if (!users) {
-    return res.status(400).send('Access token is missing or invalid');
+    return responseForClient(400, res);
   }
   return res.status(200).json(User.toResponse(users));
 });
@@ -34,7 +35,7 @@ router.route('/:id').put(async (req, res) => {
     return res.status(200).json(User.toResponse(userOne));
   }
 
-  return res.status(404).send('Bad request');
+  return responseForClient(404, res);
 });
 
 router.route('/:id').delete(async (req, res) => {

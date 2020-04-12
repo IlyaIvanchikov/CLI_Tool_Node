@@ -2,30 +2,42 @@ const morgan = require('morgan');
 const appRoot = require('app-root-path');
 const winston = require('winston');
 
-var options = {
-  file: {
+const options = {
+  fileInfo: {
     level: 'info',
-    filename: `${appRoot}/src/logs/app.log`,
-    handleExceptions: true,
+    filename: `${appRoot}/src/logs/info.log`,
     json: true,
-    maxsize: 5242880, // 5MB
-    maxFiles: 5,
+    colorize: false
+  },
+  fileError: {
+    level: 'error',
+    filename: `${appRoot}/src/logs/error.log`,
+    json: true,
+    colorize: false
+  },
+  fileException: {
+    level: 'error',
+    filename: `${appRoot}/src/logs/exception.log`,
+    json: true,
     colorize: false
   },
   console: {
-    level: 'debug',
-    handleExceptions: true,
+    level: 'silly',
     json: false,
     colorize: true
   }
 };
 
+
 const logger = winston.createLogger({
   transports: [
     new winston.transports.Console(options.console),
-    new winston.transports.File(options.file)
+    new winston.transports.File(options.fileInfo),
+    new winston.transports.File(options.fileError),
   ],
-  exitOnError: false // do not exit on handled exceptions
+  exceptionHandlers: [
+    new winston.transports.File(options.fileException),
+  ]
 });
 
 logger.stream = {
@@ -33,14 +45,13 @@ logger.stream = {
     logger.info(message);
   }
 };
-// logger.info('hello', { message: 'world' });
 
 morgan.token('body', function(req, res) {
   return JSON.stringify(req.body);
 });
 
 morgan.token('query', function(req, res) {
-  return JSON.stringify(req.query);
+  return JSON.stringify(req.params);
 });
 
 module.exports = logger;

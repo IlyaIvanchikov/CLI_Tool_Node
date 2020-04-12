@@ -25,11 +25,13 @@ app.use('/', (req, res, next) => {
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 app.use('/boards', taskRouter);
-app.use(function(err, req, res, next) {
-  console.error(err);
-  // res.status(500).send('Something broke!');
+
+process.on('uncaughtException', (error, origin) => {
+  logger.error(`captured error: ${error.message}`);
 });
-// app.use((req, res, next) => {
-//   res.status(404).send('Sorry cant find that!');
-// });
+
+process.on('unhandledRejection', reason => {
+  logger.error(`Unhandled rejection detected: ${reason.message}`);
+});
+
 module.exports = app;
