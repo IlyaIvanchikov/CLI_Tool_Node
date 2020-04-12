@@ -1,4 +1,4 @@
-# RS School NodeJS course
+# RS School NodeJS course!!!
 
 You can generate a new repository with the same directory structure and files as an existing repository using GitHub article: [ Creating a repository from a template](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 
