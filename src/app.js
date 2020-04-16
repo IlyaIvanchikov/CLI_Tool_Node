@@ -7,6 +7,8 @@ const boardRouter = require('./resources/boards/board.router');
 const taskRouter = require('./resources/tasks/task.router');
 const logger = require('./common/logger');
 const morgan = require('morgan');
+const { handleError } = require('./common/allError');
+
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
 
@@ -25,13 +27,7 @@ app.use('/', (req, res, next) => {
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 app.use('/boards', taskRouter);
-
-process.on('uncaughtException', (error, origin) => {
-  logger.error(`captured error: ${error.message}`);
+app.use((err, req, res) => {
+  handleError(err, res);
 });
-
-process.on('unhandledRejection', reason => {
-  logger.error(`Unhandled rejection detected: ${reason.message}`);
-});
-
 module.exports = app;
