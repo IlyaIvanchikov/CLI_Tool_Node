@@ -1,3 +1,265 @@
-2020-04-16 16:42:33:4233 error: Unhandled rejection detected: querySrv ECONNREFUSED _mongodb._tcp.restapitask-velyo.mongodb.net
-2020-04-16 16:43:41:4341 error: Unhandled rejection detected: querySrv ECONNREFUSED _mongodb._tcp.restapitask-velyo.mongodb.net
-2020-04-16 17:05:12:512 error: Unhandled rejection detected: querySrv ECONNREFUSED _mongodb._tcp.restapitask-velyo.mongodb.net
+2020-04-17 10:04:44:444 info: /doc/, BODY {}, QUERY {}
+2020-04-17 10:04:45:445 info: /doc/swagger-ui.css, BODY {}, QUERY {}
+2020-04-17 10:04:46:446 info: /doc/swagger-ui-bundle.js, BODY {}, QUERY {}
+2020-04-17 10:04:46:446 info: /doc/swagger-ui-init.js, BODY {}, QUERY {}
+2020-04-17 10:04:46:446 info: /doc/swagger-ui-standalone-preset.js, BODY {}, QUERY {}
+2020-04-17 10:04:53:453 info: /users, BODY {}, QUERY -
+2020-04-17 10:07:07:77 info: /users, BODY {}, QUERY -
+2020-04-17 10:07:07:77 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY -
+2020-04-17 10:07:07:77 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY -
+2020-04-17 10:07:07:77 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY -
+2020-04-17 10:07:07:77 info: /users/undefined, BODY {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY -
+2020-04-17 10:07:07:77 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY -
+2020-04-17 10:07:07:77 info: /users/undefined, BODY {}, QUERY -
+2020-04-17 10:07:07:77 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY -
+2020-04-17 11:02:49:249 info: /doc/, BODY {}, QUERY {}
+2020-04-17 11:02:50:250 info: /doc/swagger-ui-init.js, BODY {}, QUERY {}
+2020-04-17 11:02:51:251 info: /doc/swagger-ui-bundle.js, BODY {}, QUERY {}
+2020-04-17 11:02:51:251 info: /doc/swagger-ui-standalone-preset.js, BODY {}, QUERY {}
+2020-04-17 11:02:51:251 info: /doc/swagger-ui.css, BODY {}, QUERY {}
+2020-04-17 11:03:10:310 info: /users, BODY {}, QUERY -
+2020-04-17 11:17:27:1727 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY -
+2020-04-17 11:22:10:2210 info: /users, BODY {}, QUERY -
+2020-04-17 11:27:49:2749 info: /users, BODY {"name":"boom1","login":"boom2","password":"boom3"}, QUERY {}
+2020-04-17 11:28:37:2837 info: /users, BODY {}, QUERY -
+2020-04-17 11:33:14:3314 info: /users, BODY {}, QUERY {}
+2020-04-17 11:34:05:345 info: /users, BODY {}, QUERY -
+2020-04-17 11:36:14:3614 info: /users, BODY {}, QUERY -
+2020-04-17 11:36:31:3631 error: captured error: listen EADDRINUSE: address already in use :::4000
+2020-04-17 11:38:59:3859 info: /users, BODY {}, QUERY -
+2020-04-17 11:39:17:3917 info: /users, BODY {}, QUERY -
+2020-04-17 11:39:22:3922 info: /users, BODY {}, QUERY -
+2020-04-17 11:39:38:3938 info: /users, BODY {}, QUERY -
+2020-04-17 11:39:44:3944 info: /users, BODY {}, QUERY -
+2020-04-17 11:40:06:406 info: /users, BODY {}, QUERY -
+2020-04-17 11:40:29:4029 info: /users, BODY {}, QUERY -
+2020-04-17 11:41:33:4133 info: /users, BODY {}, QUERY -
+2020-04-17 11:42:38:4238 info: /users, BODY {}, QUERY -
+2020-04-17 11:43:06:436 info: /users, BODY {}, QUERY -
+2020-04-17 11:44:31:4431 info: /users, BODY {}, QUERY -
+2020-04-17 11:47:26:4726 error: captured error: db.cb is not a function
+2020-04-17 11:47:37:4737 error: Unhandled rejection detected: user is not allowed to do action [dropDatabase] on [RestDB.]
+2020-04-17 11:53:30:5330 error: Unhandled rejection detected: user is not allowed to do action [dropDatabase] on [RestDB.]
+2020-04-17 11:55:51:5551 error: Unhandled rejection detected: user is not allowed to do action [dropDatabase] on [RestDB.]
+2020-04-17 12:01:26:126 info: /users, BODY {}, QUERY -
+2020-04-17 12:04:15:415 error: Unhandled rejection detected: user is not allowed to do action [dropDatabase] on [RestDB.]
+2020-04-17 12:16:47:1647 info: /users, BODY {}, QUERY -
+2020-04-17 12:19:37:1937 info: /doc/, BODY {}, QUERY {}
+2020-04-17 12:19:38:1938 info: /doc/swagger-ui.css, BODY {}, QUERY {}
+2020-04-17 12:19:38:1938 info: /doc/swagger-ui-bundle.js, BODY {}, QUERY {}
+2020-04-17 12:19:38:1938 info: /doc/swagger-ui-standalone-preset.js, BODY {}, QUERY {}
+2020-04-17 12:19:38:1938 info: /doc/swagger-ui-init.js, BODY {}, QUERY {}
+2020-04-17 12:19:40:1940 info: /doc/favicon-32x32.png, BODY {}, QUERY {}
+2020-04-17 12:19:55:1955 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 12:24:13:2413 info: /users, BODY {}, QUERY -
+2020-04-17 12:24:13:2413 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:24:13:2413 info: /users/49ec4d31-f841-478a-b1b3-e5b5d2d0f6b7, BODY {}, QUERY -
+2020-04-17 12:24:13:2413 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:24:13:2413 info: /users/32dbe617-d963-4bae-af2b-9cc58f08938c, BODY {}, QUERY -
+2020-04-17 12:24:13:2413 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:24:13:2413 info: /users/22eb5e31-cc42-4d5d-b5ba-42204b612352, BODY {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"22eb5e31-cc42-4d5d-b5ba-42204b612352"}, QUERY -
+2020-04-17 12:24:13:2413 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:24:13:2413 info: /users/883f57ad-f34e-4ff4-b0cb-2b9d761db167, BODY {}, QUERY -
+2020-04-17 12:24:14:2414 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:24:15:2415 error: null undefined
+2020-04-17 12:24:15:2415 info: /boards, BODY {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}, QUERY -
+2020-04-17 12:29:38:2938 info: /users, BODY {}, QUERY -
+2020-04-17 12:29:39:2939 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:29:39:2939 info: /users/7c096714-2cce-46b9-8aec-0f81efe96a56, BODY {}, QUERY -
+2020-04-17 12:29:39:2939 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:29:39:2939 info: /users/f0e2435c-a09e-4cd2-b60c-d56c9cb5b5c1, BODY {}, QUERY -
+2020-04-17 12:29:39:2939 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:29:39:2939 info: /users/c2b2e97e-b303-4237-980d-13fa3f0bea29, BODY {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"c2b2e97e-b303-4237-980d-13fa3f0bea29"}, QUERY -
+2020-04-17 12:29:39:2939 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:29:39:2939 info: /users/33da98d6-3e1d-4ff6-a2a0-0391e20cb096, BODY {}, QUERY -
+2020-04-17 12:29:39:2939 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:29:40:2940 error: null undefined
+2020-04-17 12:29:40:2940 info: /boards, BODY {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}, QUERY -
+2020-04-17 12:30:06:306 info: /users, BODY {}, QUERY -
+2020-04-17 12:48:34:4834 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 12:48:42:4842 info: /users, BODY {}, QUERY {}
+2020-04-17 12:49:23:4923 info: /users, BODY {}, QUERY {}
+2020-04-17 12:49:24:4924 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:49:24:4924 info: /users/b75250ad-17f7-49ac-82c9-7865b4794956, BODY {}, QUERY -
+2020-04-17 12:49:24:4924 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:49:24:4924 info: /users/08efe9fc-0db8-427b-be8b-efa67df31780, BODY {}, QUERY -
+2020-04-17 12:49:24:4924 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:49:24:4924 info: /users/6e82cb8a-42d9-4061-9941-bd02c556449d, BODY {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"6e82cb8a-42d9-4061-9941-bd02c556449d"}, QUERY -
+2020-04-17 12:49:24:4924 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:49:24:4924 info: /users/4583d577-b146-4dda-948d-cb97b11d710d, BODY {}, QUERY -
+2020-04-17 12:49:25:4925 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:49:25:4925 error: null undefined
+2020-04-17 12:49:25:4925 info: /boards, BODY {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}, QUERY -
+2020-04-17 12:54:08:548 info: /users, BODY {}, QUERY -
+2020-04-17 12:54:08:548 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:54:08:548 info: /users/d39be36b-65e3-4534-ac4a-01301f00c51d, BODY {}, QUERY -
+2020-04-17 12:54:09:549 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:54:09:549 info: /users/ff42fbe7-3c0e-4cbc-a1ca-fb6e25a05cd3, BODY {}, QUERY -
+2020-04-17 12:54:09:549 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:54:09:549 info: /users/188192f1-06bc-48bb-bb99-b5349bb3b8c6, BODY {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"188192f1-06bc-48bb-bb99-b5349bb3b8c6"}, QUERY -
+2020-04-17 12:54:09:549 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:54:09:549 info: /users/b7ec8dc5-f870-4ce1-8e54-13050fcc59c4, BODY {}, QUERY -
+2020-04-17 12:54:09:549 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 12:54:09:549 error: null undefined
+2020-04-17 12:54:09:549 info: /boards, BODY {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}, QUERY -
+2020-04-17 13:02:19:219 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 13:02:23:223 info: /users, BODY {}, QUERY {}
+2020-04-17 13:03:06:36 info: /users, BODY {}, QUERY {}
+2020-04-17 13:03:06:36 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 13:03:06:36 info: /users/96fd8f8d-66b0-4073-9c5a-0cd2f6f40192, BODY {}, QUERY -
+2020-04-17 13:03:06:36 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 13:03:06:36 info: /users/b502f31a-918c-4e41-bb29-c98a079e0aa3, BODY {}, QUERY -
+2020-04-17 13:03:06:36 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 13:03:06:36 info: /users/b1a2149d-4433-435b-8cb4-de68f2317ec6, BODY {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"b1a2149d-4433-435b-8cb4-de68f2317ec6"}, QUERY -
+2020-04-17 13:03:06:36 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 13:03:06:36 info: /users/cca14de2-ffb5-4d3b-8334-e589927bcf7e, BODY {}, QUERY -
+2020-04-17 13:03:06:36 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 13:03:07:37 error: null undefined
+2020-04-17 13:03:07:37 info: /boards, BODY {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}, QUERY -
+2020-04-17 14:15:54:1554 info: /doc/, BODY {}, QUERY {}
+2020-04-17 14:15:55:1555 info: /doc/swagger-ui-init.js, BODY {}, QUERY {}
+2020-04-17 14:15:55:1555 info: /doc/swagger-ui-bundle.js, BODY {}, QUERY {}
+2020-04-17 14:15:55:1555 info: /doc/swagger-ui-standalone-preset.js, BODY {}, QUERY {}
+2020-04-17 14:15:55:1555 info: /doc/swagger-ui.css, BODY {}, QUERY {}
+2020-04-17 14:15:58:1558 info: /doc/favicon-32x32.png, BODY {}, QUERY {}
+2020-04-17 14:16:05:165 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY -
+2020-04-17 14:17:05:175 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY -
+2020-04-17 14:19:13:1913 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 14:19:20:1920 info: /users, BODY {}, QUERY {}
+2020-04-17 14:41:21:4121 info: /users, BODY {}, QUERY -
+2020-04-17 14:41:22:4122 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 14:41:22:4122 info: /users/4ae8eb2b-4f73-4edd-992d-92f3db457b2f, BODY {}, QUERY {"id":"4ae8eb2b-4f73-4edd-992d-92f3db457b2f"}
+2020-04-17 14:41:22:4122 info: /users/4ae8eb2b-4f73-4edd-992d-92f3db457b2f, BODY {}, QUERY -
+2020-04-17 14:41:22:4122 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 14:41:22:4122 info: /users/ee0c492c-b0a7-4349-a54e-42ffdb250880, BODY {}, QUERY -
+2020-04-17 14:41:22:4122 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 14:41:22:4122 info: /users/cd3b1634-a220-4b34-8bc4-6f4f5b28a2b2, BODY {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"cd3b1634-a220-4b34-8bc4-6f4f5b28a2b2"}, QUERY -
+2020-04-17 14:41:22:4122 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 14:41:22:4122 info: /users/14f7c282-4ede-4e41-81d5-2bb7fc502ca6, BODY {}, QUERY -
+2020-04-17 14:41:23:4123 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 14:41:23:4123 error: null undefined
+2020-04-17 14:41:23:4123 info: /boards, BODY {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}, QUERY -
+2020-04-17 16:59:08:598 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 16:59:20:5920 info: /users/a91cb24f-1ac0-448f-901d-89ecfc68b1f3, BODY {}, QUERY {"id":"a91cb24f-1ac0-448f-901d-89ecfc68b1f3"}
+2020-04-17 17:00:57:057 info: /users, BODY {}, QUERY {}
+2020-04-17 17:00:57:057 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:00:57:057 info: /users/cfee181e-0966-4b9e-99e1-2d47259f1056, BODY {}, QUERY {"id":"cfee181e-0966-4b9e-99e1-2d47259f1056"}
+2020-04-17 17:00:57:057 info: /users/cfee181e-0966-4b9e-99e1-2d47259f1056, BODY {}, QUERY -
+2020-04-17 17:00:58:058 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:00:58:058 info: /users/c2432d49-090b-48a1-9eb0-baff6636fea2, BODY {}, QUERY -
+2020-04-17 17:00:58:058 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:00:58:058 info: /users/29aeccf8-5698-4fcf-8a1f-7df5472d93fc, BODY {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"29aeccf8-5698-4fcf-8a1f-7df5472d93fc"}, QUERY -
+2020-04-17 17:00:58:058 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:00:58:058 info: /users/fa3aceb1-0521-4f6e-987e-018a45d739bc, BODY {}, QUERY -
+2020-04-17 17:00:58:058 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:00:58:058 error: null undefined
+2020-04-17 17:00:58:058 info: /boards, BODY {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}, QUERY -
+2020-04-17 17:01:54:154 info: /users, BODY {}, QUERY {}
+2020-04-17 17:01:54:154 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:01:54:154 info: /users/c62a92b0-da59-4630-9a49-df0b00b4eb18, BODY {}, QUERY {"id":"c62a92b0-da59-4630-9a49-df0b00b4eb18"}
+2020-04-17 17:01:54:154 info: /users/c62a92b0-da59-4630-9a49-df0b00b4eb18, BODY {}, QUERY -
+2020-04-17 17:01:54:154 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:01:54:154 info: /users/d3b256ce-5224-41f7-a0ad-fde382451e80, BODY {}, QUERY -
+2020-04-17 17:01:54:154 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:01:54:154 info: /users/da5c1691-1937-4cea-8345-712e0d2f3d4a, BODY {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"da5c1691-1937-4cea-8345-712e0d2f3d4a"}, QUERY -
+2020-04-17 17:01:54:154 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:01:54:154 info: /users/c2110a2e-800c-42e6-a9bc-c22078935890, BODY {}, QUERY -
+2020-04-17 17:01:55:155 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:01:55:155 error: null undefined
+2020-04-17 17:01:55:155 info: /boards, BODY {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}, QUERY -
+2020-04-17 17:02:27:227 info: /users, BODY {}, QUERY {}
+2020-04-17 17:02:27:227 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:02:27:227 info: /users/4abd5625-7e8e-47c9-a689-aebfdf945695, BODY {}, QUERY {"id":"4abd5625-7e8e-47c9-a689-aebfdf945695"}
+2020-04-17 17:02:27:227 info: /users/4abd5625-7e8e-47c9-a689-aebfdf945695, BODY {}, QUERY -
+2020-04-17 17:02:27:227 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:02:27:227 info: /users/a8102d13-9e24-4ebb-bd03-1fa5d0d49c9b, BODY {}, QUERY -
+2020-04-17 17:02:27:227 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:02:27:227 info: /users/6c35a524-87bd-44a2-b9a0-31be38d6ab69, BODY {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"6c35a524-87bd-44a2-b9a0-31be38d6ab69"}, QUERY -
+2020-04-17 17:02:28:228 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:02:28:228 info: /users/806ab64b-bf2a-4ef9-8829-64b9d5668a39, BODY {}, QUERY -
+2020-04-17 17:02:28:228 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:02:28:228 error: null undefined
+2020-04-17 17:02:28:228 info: /boards, BODY {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}, QUERY -
+2020-04-17 17:21:59:2159 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 17:22:06:226 info: /users, BODY {}, QUERY {}
+2020-04-17 17:22:27:2227 info: /users/228d09ce-d780-4e6d-a338-61597dc1ca26, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY -
+2020-04-17 17:23:42:2342 info: /users, BODY {}, QUERY -
+2020-04-17 17:24:06:246 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 17:24:10:2410 info: /users, BODY {}, QUERY {}
+2020-04-17 17:24:23:2423 info: /users/4f2c4492-2ff8-4677-b114-b8ed77b1473a, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY -
+2020-04-17 17:25:28:2528 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 17:25:31:2531 info: /users, BODY {}, QUERY {}
+2020-04-17 17:25:44:2544 info: /users/db988959-1739-453b-acf0-34fbfb23fa03, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY -
+2020-04-17 17:26:45:2645 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 17:26:51:2651 info: /users, BODY {}, QUERY {}
+2020-04-17 17:27:05:275 info: /users/3977b350-80fc-4667-9d00-e4952517d202, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY -
+2020-04-17 17:30:57:3057 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 17:31:02:312 info: /users, BODY {}, QUERY {}
+2020-04-17 17:31:22:3122 info: /users/5a68f2a9-d8dd-4035-b02e-f19c66928dba, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY -
+2020-04-17 17:34:30:3430 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 17:34:33:3433 info: /users, BODY {}, QUERY {}
+2020-04-17 17:34:43:3443 info: /users/3a04d354-8345-4de8-b72c-c454aa356667, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY -
+2020-04-17 17:35:16:3516 info: /users, BODY {}, QUERY {}
+2020-04-17 17:36:37:3637 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 17:36:41:3641 info: /users, BODY {}, QUERY {}
+2020-04-17 17:36:51:3651 info: /users/60882cb2-7923-4a1e-b326-648f6628d49b, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY {"id":"60882cb2-7923-4a1e-b326-648f6628d49b"}
+2020-04-17 17:37:39:3739 info: /users/60882cb2-7923-4a1e-b326-648f6628d49bg, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY -
+2020-04-17 17:37:57:3757 info: /users, BODY {}, QUERY {}
+2020-04-17 17:40:52:4052 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 17:40:55:4055 info: /users, BODY {}, QUERY {}
+2020-04-17 17:41:05:415 info: /users/9ea8d00a-a6ce-408e-ac64-d21f9e0811d4, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY {"id":"9ea8d00a-a6ce-408e-ac64-d21f9e0811d4"}
+2020-04-17 17:41:17:4117 info: /users/9ea8d00a-a6ce-408e-ac64-d21f9e0811d434, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY -
+2020-04-17 17:44:23:4423 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 17:44:26:4426 info: /users, BODY {}, QUERY {}
+2020-04-17 17:44:34:4434 info: /users/685c0058-62ab-4cb5-a7b3-1c26a7d8bdd4, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY {"id":"685c0058-62ab-4cb5-a7b3-1c26a7d8bdd4"}
+2020-04-17 17:45:05:455 info: /users, BODY {}, QUERY {}
+2020-04-17 17:45:12:4512 info: /users/685c0058-62ab-4cb5-a7b3-1c26a7d8bdd4f, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY -
+2020-04-17 17:45:39:4539 info: /users, BODY {"name":"string","login":"string","password":"string"}, QUERY {}
+2020-04-17 17:45:43:4543 info: /users, BODY {}, QUERY {}
+2020-04-17 17:45:51:4551 info: /users/5df10923-e6a8-4135-83ab-46c538c44316, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY {"id":"5df10923-e6a8-4135-83ab-46c538c44316"}
+2020-04-17 17:46:14:4614 info: /users/5df10923-e6a8-4135-83ab-46c538c44316f, BODY {"name":"string1","login":"string1","password":"string1"}, QUERY -
+2020-04-17 17:47:34:4734 info: /users, BODY {}, QUERY -
+2020-04-17 17:47:34:4734 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:47:34:4734 info: /users/77fdcdbe-8cd6-4b1d-8145-0742abae2865, BODY {}, QUERY {"id":"77fdcdbe-8cd6-4b1d-8145-0742abae2865"}
+2020-04-17 17:47:34:4734 info: /users/77fdcdbe-8cd6-4b1d-8145-0742abae2865, BODY {}, QUERY -
+2020-04-17 17:47:34:4734 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:47:34:4734 info: /users/274ca7c2-d4ad-4062-ae47-57945c7b6f7b, BODY {}, QUERY -
+2020-04-17 17:47:34:4734 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:47:34:4734 info: /users/92d301a5-fd3f-4cbc-9454-7a5ea34ddf5f, BODY {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"92d301a5-fd3f-4cbc-9454-7a5ea34ddf5f"}, QUERY {"id":"92d301a5-fd3f-4cbc-9454-7a5ea34ddf5f"}
+2020-04-17 17:47:35:4735 info: /users/92d301a5-fd3f-4cbc-9454-7a5ea34ddf5f, BODY {}, QUERY {"id":"92d301a5-fd3f-4cbc-9454-7a5ea34ddf5f"}
+2020-04-17 17:47:35:4735 info: /users/92d301a5-fd3f-4cbc-9454-7a5ea34ddf5f, BODY {}, QUERY -
+2020-04-17 17:47:35:4735 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:47:35:4735 info: /users/0e28773d-ed46-41a1-a295-9ed8460adef0, BODY {}, QUERY -
+2020-04-17 17:47:35:4735 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:47:35:4735 error: null undefined
+2020-04-17 17:47:35:4735 info: /boards, BODY {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}, QUERY -
+2020-04-17 17:48:00:480 info: /users, BODY {}, QUERY {}
+2020-04-17 17:48:01:481 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:48:01:481 info: /users/1cee0d87-895b-4787-88fb-4555bb0f6d40, BODY {}, QUERY {"id":"1cee0d87-895b-4787-88fb-4555bb0f6d40"}
+2020-04-17 17:48:01:481 info: /users/1cee0d87-895b-4787-88fb-4555bb0f6d40, BODY {}, QUERY -
+2020-04-17 17:48:01:481 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:48:01:481 info: /users/a0de2bf6-483c-4273-a733-5b2b39ae0aaf, BODY {}, QUERY -
+2020-04-17 17:48:01:481 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:48:01:481 info: /users/21e8c9ba-8b3b-452e-beda-a51a3bd1746a, BODY {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"21e8c9ba-8b3b-452e-beda-a51a3bd1746a"}, QUERY {"id":"21e8c9ba-8b3b-452e-beda-a51a3bd1746a"}
+2020-04-17 17:48:01:481 info: /users/21e8c9ba-8b3b-452e-beda-a51a3bd1746a, BODY {}, QUERY {"id":"21e8c9ba-8b3b-452e-beda-a51a3bd1746a"}
+2020-04-17 17:48:01:481 info: /users/21e8c9ba-8b3b-452e-beda-a51a3bd1746a, BODY {}, QUERY -
+2020-04-17 17:48:01:481 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:48:01:481 info: /users/b0f2ef21-ab74-4a97-80ff-22ed77e58c33, BODY {}, QUERY -
+2020-04-17 17:48:01:481 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:48:02:482 error: null undefined
+2020-04-17 17:48:02:482 info: /boards, BODY {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}, QUERY -
+2020-04-17 17:48:09:489 info: /users, BODY {}, QUERY {}
+2020-04-17 17:48:09:489 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:48:09:489 info: /users/2494ff19-29cc-4db0-94f4-dcf3adf0aeb7, BODY {}, QUERY {"id":"2494ff19-29cc-4db0-94f4-dcf3adf0aeb7"}
+2020-04-17 17:48:09:489 info: /users/2494ff19-29cc-4db0-94f4-dcf3adf0aeb7, BODY {}, QUERY -
+2020-04-17 17:48:10:4810 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:48:10:4810 info: /users/bc67af8b-f600-4d8d-a449-e83e235b0240, BODY {}, QUERY -
+2020-04-17 17:48:10:4810 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:48:10:4810 info: /users/4f688053-18ff-40f4-a010-911efddfe47b, BODY {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"4f688053-18ff-40f4-a010-911efddfe47b"}, QUERY {"id":"4f688053-18ff-40f4-a010-911efddfe47b"}
+2020-04-17 17:48:10:4810 info: /users/4f688053-18ff-40f4-a010-911efddfe47b, BODY {}, QUERY {"id":"4f688053-18ff-40f4-a010-911efddfe47b"}
+2020-04-17 17:48:10:4810 info: /users/4f688053-18ff-40f4-a010-911efddfe47b, BODY {}, QUERY -
+2020-04-17 17:48:10:4810 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:48:10:4810 info: /users/d0e42630-ba17-412a-8904-562001bc3fd3, BODY {}, QUERY -
+2020-04-17 17:48:10:4810 info: /users, BODY {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}, QUERY {}
+2020-04-17 17:48:10:4810 error: null undefined
+2020-04-17 17:48:10:4810 info: /boards, BODY {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}, QUERY -

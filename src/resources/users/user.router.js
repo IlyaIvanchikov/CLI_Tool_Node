@@ -23,8 +23,12 @@ router
   )
   .post(
     catchError(async (req, res) => {
-      const user = new User(req.body);
-      if (user !== undefined) {
+      const user = new User({
+        name: req.body.name,
+        login: req.body.login,
+        password: req.body.password
+      });
+      if (user.name !== undefined) {
         await usersService.saveUser(user);
         return res.status(OK).json(User.toResponse(user));
       }
@@ -35,22 +39,22 @@ router
   .route('/:id')
   .get(
     catchError(async (req, res) => {
-      const users = await usersService.getUser(req.params.id);
-      if (!users) {
+      const user = await usersService.getUser(req.params.id);
+      if (!user) {
         throw new ErrorHandler(
           UNAUTHORIZED,
           '	Access token is missing or invalid'
         );
       }
-      return res.status(OK).json(User.toResponse(users));
+      return res.status(OK).json(User.toResponse(user));
     })
   )
   .put(
     catchError(async (req, res) => {
       const id = req.params.id;
-      const userOne = await usersService.updateUser(id, req.body);
-      if (userOne !== undefined) {
-        return res.status(OK).json(User.toResponse(userOne));
+      const updateUser = await usersService.updateUser(id, req.body);
+      if (updateUser !== null) {
+        return res.status(OK).json(User.toResponse(updateUser));
       }
       throw new ErrorHandler(NOT_FOUND, 'Users are not found');
     })

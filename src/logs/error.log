@@ -1,3 +1,18 @@
-2020-04-16 16:42:33:4233 error: Unhandled rejection detected: querySrv ECONNREFUSED _mongodb._tcp.restapitask-velyo.mongodb.net
-2020-04-16 16:43:41:4341 error: Unhandled rejection detected: querySrv ECONNREFUSED _mongodb._tcp.restapitask-velyo.mongodb.net
-2020-04-16 17:05:12:512 error: Unhandled rejection detected: querySrv ECONNREFUSED _mongodb._tcp.restapitask-velyo.mongodb.net
+2020-04-17 11:36:31:3631 error: captured error: listen EADDRINUSE: address already in use :::4000
+2020-04-17 11:47:26:4726 error: captured error: db.cb is not a function
+2020-04-17 11:47:37:4737 error: Unhandled rejection detected: user is not allowed to do action [dropDatabase] on [RestDB.]
+2020-04-17 11:53:30:5330 error: Unhandled rejection detected: user is not allowed to do action [dropDatabase] on [RestDB.]
+2020-04-17 11:55:51:5551 error: Unhandled rejection detected: user is not allowed to do action [dropDatabase] on [RestDB.]
+2020-04-17 12:04:15:415 error: Unhandled rejection detected: user is not allowed to do action [dropDatabase] on [RestDB.]
+2020-04-17 12:24:15:2415 error: null undefined
+2020-04-17 12:29:40:2940 error: null undefined
+2020-04-17 12:49:25:4925 error: null undefined
+2020-04-17 12:54:09:549 error: null undefined
+2020-04-17 13:03:07:37 error: null undefined
+2020-04-17 14:41:23:4123 error: null undefined
+2020-04-17 17:00:58:058 error: null undefined
+2020-04-17 17:01:55:155 error: null undefined
+2020-04-17 17:02:28:228 error: null undefined
+2020-04-17 17:47:35:4735 error: null undefined
+2020-04-17 17:48:02:482 error: null undefined
+2020-04-17 17:48:10:4810 error: null undefined
