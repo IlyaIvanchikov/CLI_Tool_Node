@@ -15,10 +15,10 @@ router
   .get(
     catchError(async (req, res) => {
       const users = await usersService.getAll();
-      if (users.length !== 0) {
-        return res.status(OK).json(users.map(User.toResponse));
+      if (!users) {
+        throw new ErrorHandler(NOT_FOUND, 'Users are not found');
       }
-      throw new ErrorHandler(NOT_FOUND, 'Users are not found');
+      return res.status(OK).json(users.map(User.toResponse));
     })
   )
   .post(

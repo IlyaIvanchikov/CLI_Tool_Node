@@ -1,16 +1,22 @@
 const path = require('path');
 const fs = require('fs');
 const uuid = require('uuid');
+const Task = require('./task.model');
 let tasks = require('../../data/tasks').tasks;
 
-const getAll = async boardId => {
-  return tasks.filter(task => task.boardId === boardId);
+const getAll = async boardIdOne => {
+  const tasks = await Task.find({ boardId: boardIdOne});
+  return tasks;
 };
 
 const saveTask = async (boardId, task) => {
-  task.boardId = boardId;
-  await tasks.push(task);
-  return task;
+  // const taskOne = await Task.findOne({ _id: boardId });
+  // console.log(taskOne);
+  // if (!taskOne) {
+  //   return;
+  // }
+  const taskAdd = await Task.create(task);
+  return taskAdd;
 };
 
 const getTask = async (id, boardId) => {

@@ -25,10 +25,7 @@ app.use('/', (req, res, next) => {
 });
 
 app.use('/users', userRouter);
-// app.use('/boards', boardRouter);
+app.use('/boards', boardRouter);
 // app.use('/boards', taskRouter);
-app.use((err, req, res) => {
-  console.log(err);
-  handleError(err, res);
-});
+app.use(handleError);
 module.exports = app;

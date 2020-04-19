@@ -1,18 +1,19 @@
-2020-04-17 11:36:31:3631 error: captured error: listen EADDRINUSE: address already in use :::4000
-2020-04-17 11:47:26:4726 error: captured error: db.cb is not a function
-2020-04-17 11:47:37:4737 error: Unhandled rejection detected: user is not allowed to do action [dropDatabase] on [RestDB.]
-2020-04-17 11:53:30:5330 error: Unhandled rejection detected: user is not allowed to do action [dropDatabase] on [RestDB.]
-2020-04-17 11:55:51:5551 error: Unhandled rejection detected: user is not allowed to do action [dropDatabase] on [RestDB.]
-2020-04-17 12:04:15:415 error: Unhandled rejection detected: user is not allowed to do action [dropDatabase] on [RestDB.]
-2020-04-17 12:24:15:2415 error: null undefined
-2020-04-17 12:29:40:2940 error: null undefined
-2020-04-17 12:49:25:4925 error: null undefined
-2020-04-17 12:54:09:549 error: null undefined
-2020-04-17 13:03:07:37 error: null undefined
-2020-04-17 14:41:23:4123 error: null undefined
-2020-04-17 17:00:58:058 error: null undefined
-2020-04-17 17:01:55:155 error: null undefined
-2020-04-17 17:02:28:228 error: null undefined
-2020-04-17 17:47:35:4735 error: null undefined
-2020-04-17 17:48:02:482 error: null undefined
-2020-04-17 17:48:10:4810 error: null undefined
+2020-04-19 21:04:20:420 error: 401 	Access token is missing or invalid
+2020-04-19 21:08:48:848 error: 401 	Access token is missing or invalid
+2020-04-19 21:10:28:1028 error: 401 	Access token is missing or invalid
+2020-04-19 21:40:28:4028 error: 404 Boards are not found
+2020-04-19 21:48:53:4853 error: 401 	Access token is missing or invalid
+2020-04-19 21:52:40:5240 error: 401 	Access token is missing or invalid
+2020-04-19 21:54:24:5424 error: 401 	Access token is missing or invalid
+2020-04-19 21:56:39:5639 error: 401 	Access token is missing or invalid
+2020-04-19 22:06:45:645 error: 401 	Access token is missing or invalid
+2020-04-19 22:11:42:1142 error: 401 	Access token is missing or invalid
+2020-04-19 22:18:50:1850 error: 404 Users are not found
+2020-04-19 22:36:04:364 error: 404 Users are not found
+2020-04-19 22:37:59:3759 error: 404 Users are not found
+2020-04-19 22:41:00:410 error: 404 Users are not found
+2020-04-19 22:41:33:4133 error: 404 Users are not found
+2020-04-19 22:44:29:4429 error: 404 Users are not found
+2020-04-19 22:45:39:4539 error: 404 Users are not found
+2020-04-19 22:52:43:5243 error: 404 Users are not found
+2020-04-19 22:56:23:5623 error: 404 Users are not found

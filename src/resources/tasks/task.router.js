@@ -11,20 +11,27 @@ router
     catchError(async (req, res) => {
       const boardId = req.params.boardId;
       const tasks = await tasksService.getAll(boardId);
-      if (tasks.length === 0) {
+      if (!tasks) {
         throw new ErrorHandler(NOT_FOUND, 'Users are not found');
       }
-      return res.status(OK).json(tasks);
+      return res.status(OK).json(tasks.map(Task.toResponse));
     })
   )
   .post(
     catchError(async (req, res) => {
-      const task = new Task(req.body);
-      const boardId = req.params.boardId;
-      const taskOne = await tasksService.saveTask(boardId, task);
-      if (!task) {
-        throw new ErrorHandler(NOT_FOUND, 'Users are not found');
+      // const task = new Task(req.body);
+      // const boardId = req.params.boardId;
+      // const taskOne = await tasksService.saveTask(boardId, task);
+      // if (!task) {
+      //   throw new ErrorHandler(NOT_FOUND, 'Users are not found');
+      // }
+      // return res.status(OK).json(taskOne);
+      const { title, order, description } = req.body;
+      if (!title || !description || !order) {
+        throw new ErrorHandler(NOT_FOUND, 'Tasks are not found');
+
       }
+      const taskOne = await tasksService.saveTask(boardId, req.body);
       return res.status(OK).json(taskOne);
     })
   );

@@ -7,14 +7,14 @@ class ErrorHandler extends Error {
     this.message = message;
   }
 }
-const handleError = (err, res) => {
+const handleError = (err, req, res, next) => {
   const { statusCode, message } = err;
-  logger.error(`${statusCode} ${message}`);
   res.status(statusCode).json({
     status: 'error',
     statusCode,
     message
   });
+  logger.error(`${statusCode} ${message}`);
 };
 
 module.exports = {

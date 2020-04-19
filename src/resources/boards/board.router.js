@@ -15,20 +15,21 @@ router
   .get(
     catchError(async (req, res) => {
       const boards = await BoardsService.getAll();
-      if (boards.length !== 0) {
-        return res.status(OK).json(boards);
+      if (!boards) {
+        throw new ErrorHandler(NOT_FOUND, 'Users are not found');
       }
-      throw new ErrorHandler(NOT_FOUND, 'Users are not found');
+      return res.status(OK).json(boards.map(Board.toResponse));
     })
   )
   .post(
     catchError(async (req, res) => {
-      const board = await new Board(req.body);
-      if (board !== undefined) {
-        await BoardsService.saveBoard(board);
-        return res.status(OK).json(board);
+      const { title, columns } = req.body;
+      if (!title || !columns) {
+        throw new ErrorHandler(NOT_FOUND, 'Boards are not found');
+
       }
-      throw new ErrorHandler(NOT_FOUND, 'Users are not found');
+      const boardOne = await BoardsService.saveBoard(req.body);
+      return res.status(OK).json(Board.toResponse(boardOne));
     })
   );
 
@@ -37,38 +38,36 @@ router
   .get(
     catchError(async (req, res) => {
       const board = await BoardsService.getBoard(req.params.id);
-      if (board !== undefined) {
-        return res.status(OK).json(board);
+      if (!board) {
+        throw new ErrorHandler(NOT_FOUND, 'Users are not found');
       }
-      throw new ErrorHandler(NOT_FOUND, 'Users are not found');
+      return res.status(OK).json(Board.toResponse(board));
     })
   )
   .put(
     catchError(async (req, res) => {
-      const board = new Board(req.body);
       const id = req.params.id;
-      const boardOne = await BoardsService.updateBoard(id, board);
-      if (boardOne !== undefined) {
-        return res.status(OK).json(boardOne);
+      const updateBoards = await BoardsService.updateBoard(id, req.body);
+      if (updateBoards !== null) {
+        const updateBoardOne = await Board.findById(updateBoards.id);
+        return res.status(OK).json(Board.toResponse(updateBoardOne));
       }
-
-      throw new ErrorHandler(
-        UNAUTHORIZED,
-        '	Access token is missing or invalid'
-      );
+      throw new ErrorHandler(NOT_FOUND, 'Boards are not found');
     })
   )
   .delete(
     catchError(async (req, res) => {
-      const boardsAll = await BoardsService.getAll();
-      const boards = await BoardsService.deleteBoard(req.params.id);
-      if (boards.length !== boardsAll.length) {
-        return res.status(NO_CONTENT).json(boards);
-      }
-      throw new ErrorHandler(
-        UNAUTHORIZED,
-        '	Access token is missing or invalid'
-      );
+      // const boardsAll = await BoardsService.getAll();
+      // const boards = await BoardsService.deleteBoard(req.params.id);
+      // if (boards.length !== boardsAll.length) {
+      //   return res.status(NO_CONTENT).json(boards);
+      // }
+      // throw new ErrorHandler(
+      //   UNAUTHORIZED,
+      //   '	Access token is missing or invalid'
+      // );
+      await BoardsService.deleteBoard(req.params.id);
+      res.status(NO_CONTENT).json({ message: 'The user has been deleted' });
     })
   );
 

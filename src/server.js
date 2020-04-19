@@ -19,9 +19,9 @@ const connectDB = cb => {
   });
   const db = mongoose.connection;
   db.on('error', console.error.bind(console, 'connection error:'));
-  db.once('open', async () => {
+  db.once('open', () => {
     console.log("We're connected!");
-    await db.dropDatabase();
+    // await db.dropDatabase();
     cb();
   });
 };

@@ -1,36 +1,88 @@
-2020-04-17 11:36:31:3631 error: uncaughtException: listen EADDRINUSE: address already in use :::4000
-Error: listen EADDRINUSE: address already in use :::4000
-    at Server.setupListenHandle [as _listen2] (net.js:1306:16)
-    at listenInCluster (net.js:1354:12)
-    at Server.listen (net.js:1442:7)
-    at Function.listen (d:\JS\CLI_Tool_Node\node_modules\express\lib\application.js:618:24)
-    at d:\JS\CLI_Tool_Node\src\server.js:28:7
-    at NativeConnection.<anonymous> (d:\JS\CLI_Tool_Node\src\server.js:23:5)
-    at Object.onceWrapper (events.js:312:28)
-    at NativeConnection.emit (events.js:223:5)
-    at d:\JS\CLI_Tool_Node\node_modules\mongoose\lib\connection.js:819:13
-    at d:\JS\CLI_Tool_Node\node_modules\mongodb\lib\utils.js:731:5
-    at d:\JS\CLI_Tool_Node\node_modules\mongodb\lib\mongo_client.js:217:7
-    at connectCallback (d:\JS\CLI_Tool_Node\node_modules\mongodb\lib\operations\connect.js:350:5)
-    at d:\JS\CLI_Tool_Node\node_modules\mongodb\lib\operations\connect.js:586:5
-    at Object.callback (d:\JS\CLI_Tool_Node\node_modules\mongodb\lib\core\sdam\topology.js:297:43)
-    at processWaitQueue (d:\JS\CLI_Tool_Node\node_modules\mongodb\lib\core\sdam\topology.js:1036:21)
-    at NativeTopology.serverUpdateHandler (d:\JS\CLI_Tool_Node\node_modules\mongodb\lib\core\sdam\topology.js:554:7)
-2020-04-17 11:47:26:4726 error: uncaughtException: db.cb is not a function
-TypeError: db.cb is not a function
-    at NativeConnection.<anonymous> (D:\JS\CLI_Tool_Node\src\server.js:24:5)
-    at Object.onceWrapper (events.js:312:28)
-    at NativeConnection.emit (events.js:223:5)
-    at D:\JS\CLI_Tool_Node\node_modules\mongoose\lib\connection.js:819:13
-    at D:\JS\CLI_Tool_Node\node_modules\mongodb\lib\utils.js:731:5
-    at D:\JS\CLI_Tool_Node\node_modules\mongodb\lib\mongo_client.js:217:7
-    at connectCallback (D:\JS\CLI_Tool_Node\node_modules\mongodb\lib\operations\connect.js:350:5)
-    at D:\JS\CLI_Tool_Node\node_modules\mongodb\lib\operations\connect.js:586:5
-    at Object.callback (D:\JS\CLI_Tool_Node\node_modules\mongodb\lib\core\sdam\topology.js:297:43)
-    at processWaitQueue (D:\JS\CLI_Tool_Node\node_modules\mongodb\lib\core\sdam\topology.js:1036:21)
-    at NativeTopology.serverUpdateHandler (D:\JS\CLI_Tool_Node\node_modules\mongodb\lib\core\sdam\topology.js:554:7)
-    at Server.emit (events.js:223:5)
-    at Monitor.<anonymous> (D:\JS\CLI_Tool_Node\node_modules\mongodb\lib\core\sdam\server.js:147:12)
-    at Monitor.emit (events.js:228:7)
-    at successHandler (D:\JS\CLI_Tool_Node\node_modules\mongodb\lib\core\sdam\monitor.js:154:13)
-    at D:\JS\CLI_Tool_Node\node_modules\mongodb\lib\core\sdam\monitor.js:196:5
+2020-04-19 21:54:52:5452 error: uncaughtException: Unexpected token 'return'
+D:\EPAM\CLI_Tool_Node\src\resources\boards\board.router.js:64
+        return res.status(OK).json(Board.toResponse(await Board.findById({ id: updateBoards.id })));
+        ^^^^^^
+
+SyntaxError: Unexpected token 'return'
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\app.js:6:21)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+2020-04-19 21:56:21:5621 error: uncaughtException: Unexpected token '.'
+D:\EPAM\CLI_Tool_Node\src\resources\boards\board.router.js:63
+        const updateBoardOne = await Board.findById({ updateBoards._id });
+                                                                  ^
+
+SyntaxError: Unexpected token '.'
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\app.js:6:21)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+2020-04-19 21:59:08:598 error: uncaughtException: missing ) after argument list
+D:\EPAM\CLI_Tool_Node\src\resources\boards\board.router.js:63
+        const updateBoardOne = await Board.findById(_id: updateBoards._id);
+                                                    ^^^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\app.js:6:21)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+2020-04-19 21:59:12:5912 error: uncaughtException: missing ) after argument list
+D:\EPAM\CLI_Tool_Node\src\resources\boards\board.router.js:63
+        const updateBoardOne = await Board.findById(_id: updateBoards._id);
+                                                    ^^^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\app.js:6:21)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
