@@ -86,3 +86,179 @@ SyntaxError: missing ) after argument list
     at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\server.js:2:13)
     at Module._compile (internal/modules/cjs/loader.js:955:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+2020-04-20 01:04:20:420 error: uncaughtException: Unexpected token '||'
+D:\EPAM\CLI_Tool_Node\src\resources\tasks\task.router.js:31
+      if (!title || ||) {
+                    ^^
+
+SyntaxError: Unexpected token '||'
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\app.js:7:20)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+2020-04-20 01:04:24:424 error: uncaughtException: Unexpected token ')'
+D:\EPAM\CLI_Tool_Node\src\resources\tasks\task.router.js:31
+      if (!title || !order ||) {
+                             ^
+
+SyntaxError: Unexpected token ')'
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\app.js:7:20)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+2020-04-20 01:07:51:751 error: uncaughtException: Unexpected identifier
+D:\EPAM\CLI_Tool_Node\src\resources\tasks\task.router.js:31
+      if (!title || !order || !description description) {
+                                           ^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\app.js:7:20)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+2020-04-20 01:14:00:140 error: uncaughtException: Unexpected token '||'
+D:\EPAM\CLI_Tool_Node\src\resources\tasks\task.router.js:31
+      if (!title || ||) {
+                    ^^
+
+SyntaxError: Unexpected token '||'
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\app.js:7:20)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+2020-04-20 01:14:05:145 error: uncaughtException: Unexpected token ')'
+D:\EPAM\CLI_Tool_Node\src\resources\tasks\task.router.js:31
+      if (!title ||!order ||) {
+                            ^
+
+SyntaxError: Unexpected token ')'
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\app.js:7:20)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+2020-04-20 01:23:38:2338 error: uncaughtException: Unexpected token ')'
+D:\EPAM\CLI_Tool_Node\src\resources\tasks\task.router.js:31
+      if (!title ||!order ||) {
+                            ^
+
+SyntaxError: Unexpected token ')'
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\app.js:7:20)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+2020-04-20 01:23:41:2341 error: uncaughtException: Unexpected token ')'
+D:\EPAM\CLI_Tool_Node\src\resources\tasks\task.router.js:31
+      if (!title ||!order ||) {
+                            ^
+
+SyntaxError: Unexpected token ')'
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\app.js:7:20)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+2020-04-20 01:32:25:3225 error: uncaughtException: Identifier 'id' has already been declared
+D:\EPAM\CLI_Tool_Node\src\resources\tasks\task.router.js:68
+      const id = req.params.id;
+            ^
+
+SyntaxError: Identifier 'id' has already been declared
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\app.js:7:20)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\EPAM\CLI_Tool_Node\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)

@@ -26,13 +26,17 @@ router
       //   throw new ErrorHandler(NOT_FOUND, 'Users are not found');
       // }
       // return res.status(OK).json(taskOne);
-      const { title, order, description } = req.body;
-      if (!title || !description || !order) {
+      const boardId = req.params.boardId;
+      const { title } = req.body;
+      if (!title) {
         throw new ErrorHandler(NOT_FOUND, 'Tasks are not found');
 
       }
-      const taskOne = await tasksService.saveTask(boardId, req.body);
-      return res.status(OK).json(taskOne);
+      const taskOne = await tasksService.saveTask(boardId, {
+        ...req.body,
+        boardId: boardId
+      });
+      return res.status(OK).json(Task.toResponse(taskOne));
     })
   );
 
@@ -44,10 +48,11 @@ router
         req.params.id,
         req.params.boardId
       );
-      if (task !== undefined) {
-        return res.status(OK).json(task);
+      if (!task) {
+        throw new ErrorHandler(NOT_FOUND, 'Users are not found');
+        
       }
-      throw new ErrorHandler(NOT_FOUND, 'Users are not found');
+      return res.status(OK).json(Task.toResponse(task));
     })
   )
   .put(
@@ -56,19 +61,32 @@ router
       const boardId = req.params.boardId;
       const id = req.params.id;
       const taskOne = await tasksService.updateTask(id, boardId, task);
-      if (!taskOne || !boardId) {
-        throw new ErrorHandler(NOT_FOUND, 'Users are not found');
+      if (taskOne !== null) {
+      const updateTaskOne = await Task.findById(taskOne.id);
+      return res.status(OK).json(Task.toResponse(updateTaskOne));
       }
-      return res.status(OK).json(taskOne);
+      throw new ErrorHandler(NOT_FOUND, 'Users are not found');
+      
+      // const id = req.params.id;
+      // const updateBoards = await BoardsService.updateBoard(id, req.body);
+      // if (updateBoards !== null) {
+      //   const updateBoardOne = await Board.findById(updateBoards.id);
+      //   return res.status(OK).json(Board.toResponse(updateBoardOne));
+      // }
+      // throw new ErrorHandler(NOT_FOUND, 'Boards are not found');
     })
   )
   .delete(
     catchError(async (req, res) => {
+      // const id = req.params.id;
+      // await tasksService.deleteTask(id);
+      // return res
+      //   .status(NO_CONTENT)
+      //   .json({ message: 'The user has been deleted' });
+      const boardId = req.params.boardId;
       const id = req.params.id;
-      await tasksService.deleteTask(id);
-      return res
-        .status(NO_CONTENT)
-        .json({ message: 'The user has been deleted' });
+      await tasksService.deleteTask(id, boardId);
+      res.status(NO_CONTENT).json({ message: 'The user has been deleted' });
     })
   );
 

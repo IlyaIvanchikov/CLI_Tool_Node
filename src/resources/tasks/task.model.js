@@ -50,9 +50,8 @@ const taskSchema = new mongoose.Schema({
 
 
 taskSchema.statics.toResponse = task => {
-  const { id, title, order, description, userId } = board;
-
-  return { id, title, order, description, userId };
+  const { id, title, order, description, userId, boardId, columnId  } = task;
+  return { id, title, order, description, userId, boardId, columnId };
 };
 
 const Task = mongoose.model('Task', taskSchema);

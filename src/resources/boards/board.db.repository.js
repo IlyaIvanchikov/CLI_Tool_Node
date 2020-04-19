@@ -27,7 +27,7 @@ const updateBoard = async (id, board) => {
 const deleteBoard = async id => {
   await Board.deleteOne({_id: id});
   // boards = boards.filter(board => board.id !== id);
-  // await taskService.deleteTaskByBoard(id);
+  await taskService.deleteTaskByBoard(id);
   // return boards;
 };
 module.exports = { getAll, getBoard, saveBoard, updateBoard, deleteBoard };
