@@ -1,5 +1,3 @@
-const path = require('path');
-const fs = require('fs');
 const taskService = require('../tasks/task.service');
 const User = require('./user.model');
 
@@ -25,9 +23,6 @@ const updateUser = async (id, user) => {
 
 const deleteUser = async id => {
   taskService.userNull(id);
-  await User.deleteOne({_id: id});
-  // users = users.filter(user => user.id !== id);
-
-  // return null;
+  await User.deleteOne({ _id: id });
 };
 module.exports = { getAll, saveUser, getUser, updateUser, deleteUser };

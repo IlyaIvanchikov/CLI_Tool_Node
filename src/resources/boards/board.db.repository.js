@@ -1,7 +1,4 @@
-const path = require('path');
-const fs = require('fs');
 const Board = require('./board.model');
-let boards = require('../../data/boards').boards;
 const taskService = require('../tasks/task.service');
 
 const getAll = async () => {
@@ -25,9 +22,7 @@ const updateBoard = async (id, board) => {
 };
 
 const deleteBoard = async id => {
-  await Board.deleteOne({_id: id});
-  // boards = boards.filter(board => board.id !== id);
+  await Board.deleteOne({ _id: id });
   await taskService.deleteTaskByBoard(id);
-  // return boards;
 };
 module.exports = { getAll, getBoard, saveBoard, updateBoard, deleteBoard };

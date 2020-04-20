@@ -3,12 +3,7 @@ const Board = require('./board.model');
 const BoardsService = require('./board.service');
 const { ErrorHandler } = require('../../common/allError');
 const catchError = require('../../common/catchError');
-const {
-  NOT_FOUND,
-  OK,
-  UNAUTHORIZED,
-  NO_CONTENT
-} = require('http-status-codes');
+const { NOT_FOUND, OK, NO_CONTENT } = require('http-status-codes');
 
 router
   .route('/')
@@ -26,7 +21,6 @@ router
       const { title, columns } = req.body;
       if (!title || !columns) {
         throw new ErrorHandler(NOT_FOUND, 'Boards are not found');
-
       }
       const boardOne = await BoardsService.saveBoard(req.body);
       return res.status(OK).json(Board.toResponse(boardOne));
@@ -57,15 +51,6 @@ router
   )
   .delete(
     catchError(async (req, res) => {
-      // const boardsAll = await BoardsService.getAll();
-      // const boards = await BoardsService.deleteBoard(req.params.id);
-      // if (boards.length !== boardsAll.length) {
-      //   return res.status(NO_CONTENT).json(boards);
-      // }
-      // throw new ErrorHandler(
-      //   UNAUTHORIZED,
-      //   '	Access token is missing or invalid'
-      // );
       await BoardsService.deleteBoard(req.params.id);
       res.status(NO_CONTENT).json({ message: 'The user has been deleted' });
     })

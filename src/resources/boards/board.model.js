@@ -11,17 +11,17 @@ const columnSchema = new mongoose.Schema({
   order: Number
 });
 
-const boardSchema = new mongoose.Schema({
-  _id: {
-    type: String,
-    default: uuid
+const boardSchema = new mongoose.Schema(
+  {
+    _id: {
+      type: String,
+      default: uuid
+    },
+    title: String,
+    columns: [columnSchema]
   },
-  title: String,
-  columns: [columnSchema],
-},
   { versionKey: false }
 );
-
 
 boardSchema.statics.toResponse = board => {
   const { id, title, columns } = board;

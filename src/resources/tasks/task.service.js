@@ -5,7 +5,7 @@ const saveTask = (boardId, task) => tasksRepo.saveTask(boardId, task);
 const getTask = (id, boardId) => tasksRepo.getTask(id, boardId);
 const updateTask = (id, boardId, task) =>
   tasksRepo.updateTask(id, boardId, task);
-const deleteTask = (id, boardId)=> tasksRepo.deleteTask(id, boardId);
+const deleteTask = (id, boardId) => tasksRepo.deleteTask(id, boardId);
 const userNull = id => tasksRepo.userNull(id);
 const deleteTaskByBoard = boardId => tasksRepo.deleteTaskByBoard(boardId);
 module.exports = {
