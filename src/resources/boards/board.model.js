@@ -6,9 +6,8 @@ class Board {
     this.title = title;
     this.columns = columns.map((item, index) => {
       return new Column(item);
-    })
+    });
   }
-
 }
 
 module.exports = Board;
