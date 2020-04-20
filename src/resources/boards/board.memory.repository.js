@@ -1,5 +1,3 @@
-const path = require('path');
-const fs = require('fs');
 let boards = require('../../data/boards').boards;
 const taskService = require('../tasks/task.service');
 
@@ -22,7 +20,7 @@ const updateBoard = async (id, board) => {
     boards[boardId] = board;
     return boards[boardId];
   }
-  return; 
+  return;
 };
 
 const deleteBoard = async id => {

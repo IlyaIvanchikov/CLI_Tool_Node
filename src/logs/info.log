@@ -1,0 +1,10 @@
+2020-04-20 10:50:28:5028 info: /doc/, BODY {}, QUERY {}
+2020-04-20 10:50:29:5029 info: /doc/swagger-ui.css, BODY {}, QUERY {}
+2020-04-20 10:50:29:5029 info: /doc/swagger-ui-bundle.js, BODY {}, QUERY {}
+2020-04-20 10:50:29:5029 info: /doc/swagger-ui-standalone-preset.js, BODY {}, QUERY {}
+2020-04-20 10:50:29:5029 info: /doc/swagger-ui-init.js, BODY {}, QUERY {}
+2020-04-20 10:50:41:5041 info: /users, BODY {}, QUERY -
+2020-04-20 10:50:55:5055 error: 404 Users are not found
+2020-04-20 10:50:55:5055 info: /users, BODY {}, QUERY {}
+2020-04-20 10:54:29:5429 error: 404 Users are not found
+2020-04-20 10:54:29:5429 info: /users, BODY {}, QUERY {}
