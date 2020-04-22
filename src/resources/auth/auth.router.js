@@ -21,7 +21,7 @@ router
       const { login, password } = req.body;
       if (login && password) {
         const authUser = await authService.getUser(login, password);
-        if (authUser) {
+        if (authUser.length !== 0) {
           const token = jwt.sign(
             { login, userId: authUser.userId },
             JWT_SECRET_KEY,

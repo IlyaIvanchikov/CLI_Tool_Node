@@ -2,6 +2,7 @@ const { PORT, MONGO_CONNECTION_STRING } = require('./common/config');
 const app = require('./app');
 const logger = require('./common/logger');
 const mongoose = require('mongoose');
+const User = require('./resources/users/user.model');
 process
   .on('uncaughtException', error => {
     logger.error(`captured error: ${error.message}`);
@@ -9,6 +10,11 @@ process
   .on('unhandledRejection', reason => {
     logger.error(`Unhandled rejection detected: ${reason.message}`);
   });
+
+  const users = [
+    new User({ name: 'user1', login: 'admin', password: 'admin' }),
+    new User({ name: 'user2', login: 'user_login2', password: 'pass' })
+  ];
 
 
 const connectDB = cb => {
@@ -22,6 +28,7 @@ const connectDB = cb => {
   db.once('open', async () => {
     console.log("We're connected!");
     await db.dropDatabase();
+    users.forEach(user => user.save());
     cb();
   });
 };
