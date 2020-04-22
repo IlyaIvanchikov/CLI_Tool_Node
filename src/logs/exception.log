@@ -1,0 +1,18 @@
+2020-04-22 15:23:16:2316 error: uncaughtException: req is not defined
+ReferenceError: req is not defined
+    at Object.<anonymous> (D:\JS\CLI_Tool_Node\src\resources\users\user.router.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\JS\CLI_Tool_Node\src\app.js:5:20)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (D:\JS\CLI_Tool_Node\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)

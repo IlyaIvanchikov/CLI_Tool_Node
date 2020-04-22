@@ -3,6 +3,7 @@ const User = require('./user.model');
 const usersService = require('./user.service');
 const { ErrorHandler } = require('../../common/allError');
 const catchError = require('../../common/catchError');
+
 const {
   NOT_FOUND,
   OK,
@@ -26,13 +27,13 @@ router
       const user = new User({
         name: req.body.name,
         login: req.body.login,
-        password: req.body.password
+        password: await usersService.crypt(req.body.password)
       });
-      if (user.name !== undefined) {
-        await usersService.saveUser(user);
-        return res.status(OK).json(User.toResponse(user));
+      if (!user) {
+        throw new ErrorHandler(NOT_FOUND, 'Users are not found');
       }
-      throw new ErrorHandler(NOT_FOUND, 'Users are not found');
+      await usersService.saveUser(user);
+      return res.status(OK).json(User.toResponse(user));
     })
   );
 router
