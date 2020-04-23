@@ -5,37 +5,34 @@ const { OK, FORBIDDEN, BAD_REQUEST } = require('http-status-codes');
 const authService = require('./auth.service');
 const jwt = require('jsonwebtoken');
 const { JWT_SECRET_KEY } = require('../../common/config');
-router
-  .route('/')
-  //   .get(
-  //     catchError(async (req, res) => {
-  //       const boards = await BoardsService.getAll();
-  //       if (!boards) {
-  //         throw new ErrorHandler(NOT_FOUND, 'Users are not found');
-  //       }
-  //       return res.status(OK).json(boards.map(Board.toResponse));
-  //     })
-  //   )
-  .post(
-    catchError(async (req, res) => {
-      const { login, password } = req.body;
-      if (login && password) {
-        const authUser = await authService.getUser(login, password);
-        if (authUser.length !== 0) {
-          const token = jwt.sign(
-            { login, userId: authUser.userId },
-            JWT_SECRET_KEY,
-            { expiresIn: '1h' }
-          );
-          return res.status(OK).json(token);
-        }
+const bcrypt = require('bcrypt');
+router.route('/').post(
+  catchError(async (req, res) => {
+    const { login, password } = req.body;
+    if (login && password) {
+      const authUser = await authService.getUser(login);
+      if (!authUser) {
         throw new ErrorHandler(FORBIDDEN, 'Incorrect username or password');
+      }
+      const checkPassword = await bcrypt.compare(password, authUser.password);
+      if (checkPassword) {
+        const token = jwt.sign(
+          { login, userId: authUser._id },
+          JWT_SECRET_KEY,
+          { expiresIn: '1h' }
+        );
+        return res.status(OK).send({ token });
       }
       throw new ErrorHandler(
         BAD_REQUEST,
         'Authentication failed! Please check the request'
       );
-    })
-  );
+    }
+    throw new ErrorHandler(
+      BAD_REQUEST,
+      'Authentication failed! Please check the request'
+    );
+  })
+);
 
 module.exports = router;

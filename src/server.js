@@ -11,11 +11,10 @@ process
     logger.error(`Unhandled rejection detected: ${reason.message}`);
   });
 
-  const users = [
-    new User({ name: 'user1', login: 'admin', password: 'admin' }),
-    new User({ name: 'user2', login: 'user_login2', password: 'pass' })
-  ];
-
+const users = [
+  new User({ name: 'user1', login: 'admin', password: 'admin' }),
+  new User({ name: 'user2', login: 'user_login2', password: 'pass' })
+];
 
 const connectDB = cb => {
   mongoose.connect(MONGO_CONNECTION_STRING, {

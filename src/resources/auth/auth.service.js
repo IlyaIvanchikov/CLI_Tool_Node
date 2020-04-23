@@ -1,6 +1,6 @@
 const authRepo = require('./auth.db.repository');
 
-const getUser = (login, password) => authRepo.getUser(login, password);
+const getUser = login => authRepo.getUser(login);
 
 module.exports = {
   getUser

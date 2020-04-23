@@ -3,6 +3,7 @@ const User = require('./user.model');
 const usersService = require('./user.service');
 const { ErrorHandler } = require('../../common/allError');
 const catchError = require('../../common/catchError');
+const checkToken = require('../../common/auth');
 
 const {
   NOT_FOUND,
@@ -27,7 +28,7 @@ router
       const user = new User({
         name: req.body.name,
         login: req.body.login,
-        password: await usersService.crypt(req.body.password)
+        password: req.body.password
       });
       if (!user) {
         throw new ErrorHandler(NOT_FOUND, 'Users are not found');

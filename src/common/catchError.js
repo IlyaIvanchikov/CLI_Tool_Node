@@ -1,8 +1,8 @@
 const catchError = fn => async (req, res, next) => {
   try {
-    await fn(req, res, next);
+    return await fn(req, res, next);
   } catch (error) {
-   next(error);
+    return next(error);
   }
 };
 

@@ -35,3 +35,139 @@
 2020-04-23 00:51:55:5155 error: 404 Users are not found
 2020-04-23 00:51:56:5156 error: 404 Users are not found
 2020-04-23 00:51:58:5158 error: 404 Users are not found
+2020-04-23 09:30:11:3011 error: Unhandled rejection detected: data and salt arguments required
+2020-04-23 09:30:11:3011 error: Unhandled rejection detected: data must be a string and salt must either be a salt string or a number of rounds
+2020-04-23 09:32:06:326 error: Unhandled rejection detected: User validation failed: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.
+2020-04-23 09:32:32:3232 error: Unhandled rejection detected: data and salt arguments required
+2020-04-23 09:32:39:3239 error: Unhandled rejection detected: data and salt arguments required
+2020-04-23 09:33:18:3318 error: Unhandled rejection detected: data and salt arguments required
+2020-04-23 09:33:27:3327 error: Unhandled rejection detected: data and salt arguments required
+2020-04-23 09:37:46:3746 error: Unhandled rejection detected: data and salt arguments required
+2020-04-23 10:06:14:614 error: 403 Incorrect username or password
+2020-04-23 10:40:11:4011 error: 400 Authentication failed! Please check the request
+2020-04-23 10:42:18:4218 error: 400 Authentication failed! Please check the request
+2020-04-23 12:24:33:2433 error: 404 Users are not found
+2020-04-23 12:24:34:2434 error: 404 Users are not found
+2020-04-23 12:24:34:2434 error: 404 Users are not found
+2020-04-23 12:24:34:2434 error: 404 Users are not found
+2020-04-23 12:24:34:2434 error: 404 Users are not found
+2020-04-23 12:24:34:2434 error: 404 Users are not found
+2020-04-23 12:24:47:2447 error: 404 Users are not found
+2020-04-23 12:24:49:2449 error: 404 Users are not found
+2020-04-23 12:24:54:2454 error: 404 Users are not found
+2020-04-23 12:24:56:2456 error: 404 Users are not found
+2020-04-23 12:24:56:2456 error: 404 Boards are not found
+2020-04-23 12:24:58:2458 error: 401 	Access token is missing or invalid
+2020-04-23 12:24:58:2458 error: 404 Users are not found
+2020-04-23 14:56:49:5649 error: 404 Users are not found
+2020-04-23 14:56:54:5654 error: 404 Users are not found
+2020-04-23 14:56:56:5656 error: 401 	Access token is missing or invalid
+2020-04-23 14:56:57:5657 error: 404 Users are not found
+2020-04-23 14:56:59:5659 error: 404 Users are not found
+2020-04-23 14:56:59:5659 error: 404 Boards are not found
+2020-04-23 14:57:08:578 error: 404 Users are not found
+2020-04-23 14:57:09:579 error: 404 Users are not found
+2020-04-23 14:57:09:579 error: 404 Users are not found
+2020-04-23 14:57:09:579 error: 404 Users are not found
+2020-04-23 14:57:09:579 error: 404 Users are not found
+2020-04-23 14:57:09:579 error: 404 Users are not found
+2020-04-23 14:57:19:5719 error: 404 Users are not found
+2020-04-23 15:09:39:939 error: 401 	Access token is missing or invalid
+2020-04-23 15:09:39:939 error: 404 Users are not found
+2020-04-23 15:49:18:4918 error: 401 Unauthorized
+2020-04-23 15:49:18:4918 error: 401 Unauthorized
+2020-04-23 15:49:18:4918 error: 401 Unauthorized
+2020-04-23 15:49:18:4918 error: 401 Unauthorized
+2020-04-23 15:49:18:4918 error: 401 Unauthorized
+2020-04-23 15:49:18:4918 error: 401 Unauthorized
+2020-04-23 15:49:18:4918 error: 401 Unauthorized
+2020-04-23 15:49:18:4918 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:19:4919 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:49:20:4920 error: 401 Unauthorized
+2020-04-23 15:52:07:527 error: 404 Users are not found
+2020-04-23 15:52:08:528 error: 404 Users are not found
+2020-04-23 15:52:08:528 error: 404 Users are not found
+2020-04-23 15:52:08:528 error: 404 Users are not found
+2020-04-23 15:52:08:528 error: 404 Users are not found
+2020-04-23 15:52:08:528 error: 404 Users are not found
+2020-04-23 15:52:11:5211 error: 404 Users are not found
+2020-04-23 15:52:11:5211 error: 401 Unauthorized
+2020-04-23 15:52:11:5211 error: 401 Unauthorized
+2020-04-23 15:52:12:5212 error: 401 Unauthorized
+2020-04-23 15:52:12:5212 error: 401 Unauthorized
+2020-04-23 15:52:12:5212 error: 401 Unauthorized
+2020-04-23 15:52:12:5212 error: 401 Unauthorized
+2020-04-23 15:52:12:5212 error: 401 Unauthorized
+2020-04-23 15:52:12:5212 error: 401 Unauthorized
+2020-04-23 15:52:12:5212 error: 401 Unauthorized
+2020-04-23 15:52:12:5212 error: 401 Unauthorized
+2020-04-23 15:52:12:5212 error: 401 Unauthorized
+2020-04-23 15:52:12:5212 error: 401 Unauthorized
+2020-04-23 15:52:12:5212 error: 401 Unauthorized
+2020-04-23 15:52:12:5212 error: 401 Unauthorized
+2020-04-23 15:52:12:5212 error: 401 Unauthorized
+2020-04-23 16:02:10:210 error: 401 Unauthorized
+2020-04-23 16:02:14:214 error: 401 Unauthorized
+2020-04-23 16:02:16:216 error: 401 Unauthorized
+2020-04-23 16:02:26:226 error: 401 Unauthorized
+2020-04-23 16:02:26:226 error: 401 Unauthorized
+2020-04-23 16:02:30:230 error: 401 Unauthorized
+2020-04-23 16:02:46:246 error: 401 Unauthorized
+2020-04-23 16:02:46:246 error: 401 Unauthorized
+2020-04-23 16:09:48:948 error: 401 Unauthorized
+2020-04-23 16:09:53:953 error: 401 Unauthorized
+2020-04-23 16:15:21:1521 error: 401 Unauthorized
+2020-04-23 16:17:13:1713 error: 401 Unauthorized
+2020-04-23 16:18:25:1825 error: 404 Users are not found
+2020-04-23 16:18:26:1826 error: 404 Users are not found
+2020-04-23 16:18:26:1826 error: 404 Users are not found
+2020-04-23 16:18:26:1826 error: 404 Users are not found
+2020-04-23 16:18:26:1826 error: 404 Users are not found
+2020-04-23 16:18:26:1826 error: 404 Users are not found
+2020-04-23 16:18:29:1829 error: 404 Users are not found
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized
+2020-04-23 16:18:30:1830 error: 401 Unauthorized

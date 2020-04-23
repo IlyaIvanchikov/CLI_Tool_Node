@@ -1,7 +1,7 @@
 const User = require('../users/user.model');
 
-const getUser = async (login, password) => {
-  const user = await User.find({ login, password });
+const getUser = async login => {
+  const user = await User.findOne({ login });
   return user;
 };
 
